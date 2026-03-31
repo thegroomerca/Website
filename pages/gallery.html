@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery | thegroomer.ca</title>
+  <meta
+    name="description"
+    content="A showcase of finished grooms, puppy introductions, spa extras, and signature grooming artistry at thegroomer.ca."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+
+  <style>
+    .gallery-page {
+      background: var(--surface);
+    }
+
+    .gallery-hero {
+      padding: 3rem 0 1.5rem;
+      background: var(--surface);
+    }
+
+    .gallery-hero__badge {
+      display: inline-block;
+      padding: 0.45rem 0.9rem;
+      border-radius: var(--radius-full);
+      background: #d3e2ec;
+      color: #56656d;
+      margin-bottom: 1.5rem;
+    }
+
+    .gallery-hero__title {
+      max-width: 14ch;
+      margin-bottom: 1.5rem;
+    }
+
+    .gallery-hero__copy {
+      max-width: 42rem;
+      font-size: 1.1rem;
+    }
+
+    .gallery-filters {
+      padding: 1rem 0 2rem;
+    }
+
+    .gallery-filters__row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .gallery-filters__pill {
+      border: 0;
+      border-radius: var(--radius-full);
+      padding: 0.85rem 1.25rem;
+      background: var(--surface-high);
+      color: var(--text-muted);
+      font-family: var(--font-headline);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform 0.25s ease, background 0.25s ease;
+    }
+
+    .gallery-filters__pill:hover {
+      transform: scale(1.03);
+    }
+
+    .gallery-filters__pill.is-active {
+      background: linear-gradient(135deg, var(--primary), var(--primary-soft));
+      color: #fff;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .gallery-showcase {
+      padding: 1rem 0 2rem;
+    }
+
+    .gallery-showcase__grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 2rem;
+      align-items: start;
+    }
+
+    .gallery-showcase__column {
+      display: grid;
+      gap: 2rem;
+    }
+
+    .gallery-showcase__column--offset {
+      padding-top: 5rem;
+    }
+
+    .gallery-card {
+      position: relative;
+      overflow: hidden;
+      background: var(--surface-low);
+      box-shadow: var(--shadow-soft);
+      transition: transform 0.4s ease;
+    }
+
+    .gallery-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .gallery-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.7s ease;
+    }
+
+    .gallery-card:hover img {
+      transform: scale(1.08);
+    }
+
+    .gallery-card--shape-a {
+      border-radius: 3rem 1rem 1rem 3rem;
+    }
+
+    .gallery-card--shape-b {
+      border-radius: 1rem 3rem 3rem 1rem;
+    }
+
+    .gallery-card--shape-c {
+      border-radius: 2rem 2rem 1rem 1rem;
+    }
+
+    .gallery-card--plain {
+      border-radius: 1rem;
+    }
+
+    .gallery-card--tall {
+      aspect-ratio: 4 / 5;
+    }
+
+    .gallery-card--square {
+      aspect-ratio: 1 / 1;
+    }
+
+    .gallery-card--portrait {
+      aspect-ratio: 3 / 4;
+    }
+
+    .gallery-card__overlay {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: end;
+      padding: 2rem;
+      background: linear-gradient(to top, rgba(0,0,0,0.58), rgba(0,0,0,0.08) 46%, rgba(0,0,0,0));
+      color: #fff;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .gallery-card:hover .gallery-card__overlay {
+      opacity: 1;
+    }
+
+    .gallery-card__eyebrow {
+      display: block;
+      margin-bottom: 0.35rem;
+      font-family: var(--font-headline);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.88);
+    }
+
+    .gallery-card__title {
+      font-size: 1.5rem;
+      color: #fff;
+      line-height: 1.05;
+    }
+
+    .gallery-testimonial {
+      margin-top: 5rem;
+      background: var(--surface-low);
+      border-top-left-radius: 5rem;
+      border-top-right-radius: 5rem;
+      padding: 5rem 0;
+    }
+
+    .gallery-testimonial__inner {
+      max-width: 900px;
+      text-align: center;
+    }
+
+    .gallery-testimonial__quote-mark {
+      font-family: var(--font-headline);
+      font-size: 4.5rem;
+      line-height: 1;
+      color: var(--primary-soft);
+      margin-bottom: 1rem;
+    }
+
+    .gallery-testimonial blockquote {
+      font-family: var(--font-headline);
+      font-size: clamp(2rem, 4vw, 3.25rem);
+      line-height: 1.15;
+      font-style: italic;
+      color: var(--text-muted);
+    }
+
+    .gallery-testimonial__person {
+      margin-top: 2rem;
+      display: grid;
+      justify-items: center;
+      gap: 0.75rem;
+    }
+
+    .gallery-testimonial__avatar {
+      width: 78px;
+      height: 78px;
+      border-radius: 999px;
+      object-fit: cover;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .gallery-testimonial__name {
+      font-family: var(--font-headline);
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    .gallery-testimonial__meta {
+      font-family: var(--font-headline);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--primary);
+    }
+
+    .gallery-cta {
+      padding: 5rem 0 1rem;
+    }
+
+    .gallery-cta__card {
+      position: relative;
+      overflow: hidden;
+      background: var(--surface-white);
+      box-shadow: var(--shadow-soft);
+      border-radius: var(--radius-lg);
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+
+    .gallery-cta__glow-a,
+    .gallery-cta__glow-b {
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      border-radius: 999px;
+      filter: blur(42px);
+      opacity: 0.65;
+      pointer-events: none;
+    }
+
+    .gallery-cta__glow-a {
+      top: -70px;
+      right: -70px;
+      background: rgba(127, 166, 193, 0.18);
+    }
+
+    .gallery-cta__glow-b {
+      bottom: -70px;
+      left: -70px;
+      background: rgba(155, 165, 142, 0.18);
+    }
+
+    .gallery-cta__title {
+      position: relative;
+      z-index: 1;
+      margin-bottom: 1rem;
+    }
+
+    .gallery-cta__copy {
+      position: relative;
+      z-index: 1;
+      max-width: 42rem;
+      margin: 0 auto 2rem;
+      font-size: 1.05rem;
+    }
+
+    .gallery-cta__actions {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 1100px) {
+      .gallery-showcase__grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-showcase__column--offset {
+        padding-top: 0;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .gallery-hero {
+        padding-top: 2rem;
+      }
+
+      .gallery-showcase,
+      .gallery-cta {
+        padding-top: 3rem;
+      }
+
+      .gallery-card__overlay {
+        opacity: 1;
+        padding: 1.5rem;
+      }
+
+      .gallery-testimonial {
+        border-top-left-radius: 2.5rem;
+        border-top-right-radius: 2.5rem;
+        padding: 4rem 0;
+      }
+
+      .gallery-cta__card {
+        padding: 3rem 1.25rem;
+      }
+
+      .gallery-cta__actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .gallery-cta__actions .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body class="has-fixed-header gallery-page">
+  <header class="site-header">
+    <div class="site-header__inner container">
+      <a href="../index.html" class="site-logo" aria-label="thegroomer.ca home">thegroomer.ca</a>
+
+      <nav class="site-nav site-nav--desktop" aria-label="Primary navigation">
+        <a href="../index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html" class="is-active">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a href="contact.html" class="btn btn-primary site-header__cta">Book Consultation</a>
+
+      <button
+        class="site-menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mobileMenu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="site-mobile-menu" id="mobileMenu">
+      <nav class="site-mobile-nav" aria-label="Mobile navigation">
+        <a href="../index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html" class="is-active">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html" class="mobile-menu-cta btn btn-primary">Book Consultation</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="gallery-hero">
+      <div class="container">
+        <span class="small-label gallery-hero__badge">Portfolio Showcase</span>
+        <h1 class="gallery-hero__title">A showcase of our happy artisans.</h1>
+        <p class="gallery-hero__copy">
+          Every dog is an individual canvas, and every groom is a personal masterpiece. Explore a collection of transformed companions, where craft meets compassion.
+        </p>
+      </div>
+    </section>
+
+    <section class="gallery-filters">
+      <div class="container">
+        <div class="gallery-filters__row">
+          <a href="#all" class="gallery-filters__pill is-active">All Portraits</a>
+          <a href="#full-grooms" class="gallery-filters__pill">Full Grooms</a>
+          <a href="#puppy-first" class="gallery-filters__pill">Puppy's First</a>
+          <a href="#spa-extras" class="gallery-filters__pill">Spa Extras</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-showcase" id="all">
+      <div class="container gallery-showcase__grid">
+        <div class="gallery-showcase__column">
+          <article class="gallery-card gallery-card--shape-a gallery-card--tall" id="full-grooms">
+            <img
+              src="https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=1200&q=80"
+              alt="Elegant long-haired dog after a full groom"
+            />
+            <div class="gallery-card__overlay">
+              <div>
+                <span class="gallery-card__eyebrow">Full Artisan Groom</span>
+                <h3 class="gallery-card__title">The Royal Treatment</h3>
+              </div>
+            </div>
+          </article>
+
+          <article class="gallery-card gallery-card--shape-b gallery-card--square">
+            <img
+              src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1200&q=80"
+              alt="Golden retriever with neat polished finish after grooming"
+            />
+            <div class="gallery-card__overlay">
+              <div>
+                <span class="gallery-card__eyebrow">Summer Style</span>
+                <h3 class="gallery-card__title">Golden Hour Glow</h3>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="gallery-showcase__column gallery-showcase__column--offset">
+          <article class="gallery-card gallery-card--shape-c gallery-card--square" id="puppy-first">
+            <img
+              src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=1200&q=80"
+              alt="Small white terrier with rounded face groom"
+            />
+            <div class="gallery-card__overlay">
+              <div>
+                <span class="gallery-card__eyebrow">Puppy's First</span>
+                <h3 class="gallery-card__title">Snowball Chic</h3>
+              </div>
+            </div>
+          </article>
+
+          <article class="gallery-card gallery-card--plain gallery-card--portrait">
+            <img
+              src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=1200&q=80"
+              alt="Poodle with carefully sculpted groom"
+            />
+            <div class="gallery-card__overlay">
+              <div>
+                <span class="gallery-card__eyebrow">Artisan Special</span>
+                <h3 class="gallery-card__title">The Sculpted Silhouette</h3>
+              </div>
+            </div>
+          </article>
+
+          <article class="gallery-card gallery-card--shape-a gallery-card--square" id="spa-extras">
+            <img
+              src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=80"
+              alt="Fluffy freshly groomed dog resting softly"
+            />
+            <div class="gallery-card__overlay">
+              <div>
+                <span class="gallery-card__eyebrow">Spa Extras</span>
+                <h3 class="gallery-card__title">Cloud Softness</h3>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-testimonial">
+      <div class="container gallery-testimonial__inner">
+        <div class="gallery-testimonial__quote-mark">“</div>
+        <blockquote>
+          I have never seen Cooper look so majestic. The attention to detail is remarkable — he wasn’t just groomed, he was curated with so much love and artistic flair.
+        </blockquote>
+
+        <div class="gallery-testimonial__person">
+          <img
+            class="gallery-testimonial__avatar"
+            src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=300&q=80"
+            alt="Portrait of a happy groomed dog"
+          />
+          <div class="gallery-testimonial__name">Eleanor Vance</div>
+          <div class="gallery-testimonial__meta">Mother of Cooper the King Charles</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-cta">
+      <div class="container">
+        <div class="gallery-cta__card">
+          <div class="gallery-cta__glow-a" aria-hidden="true"></div>
+          <div class="gallery-cta__glow-b" aria-hidden="true"></div>
+
+          <h2 class="gallery-cta__title">Ready for your pet’s masterpiece?</h2>
+          <p class="gallery-cta__copy">
+            Book an initial consultation and let us create a tailored grooming experience that celebrates your companion’s unique spirit.
+          </p>
+
+          <div class="gallery-cta__actions">
+            <a href="contact.html" class="btn btn-primary">Book a Consultation</a>
+            <a href="services.html" class="btn btn-secondary">View Our Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <div class="site-footer__brand">
+        <div class="site-footer__logo">thegroomer.ca</div>
+        <p>
+          Elevated dog grooming experiences through personalized, holistic care and artistry in the heart of Ontario.
+        </p>
+
+        <div class="site-footer__icons">
+          <a href="mailto:hello@thegroomer.ca" aria-label="Email">
+            <span class="footer-dot"></span>
+          </a>
+          <a href="https://www.instagram.com/thegroomer.ca/" aria-label="Instagram">
+            <span class="footer-dot"></span>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="site-footer__links">
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Connect</h4>
+        <ul class="site-footer__links">
+          <li><a href="https://www.instagram.com/thegroomer.ca/">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="contact.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom container">
+      © 2024 thegroomer.ca. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

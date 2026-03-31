@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | thegroomer.ca</title>
+  <meta
+    name="description"
+    content="Learn more about Sunyoung, the philosophy behind thegroomer.ca, and the care-first approach to artisanal dog grooming."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+
+  <style>
+    .about-page {
+      background: var(--surface);
+    }
+
+    .stationery-card {
+      background-color: #fdfbf7;
+      background-image: radial-gradient(#d1d1d1 0.5px, transparent 0.5px);
+      background-size: 20px 20px;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      position: relative;
+    }
+
+    .stationery-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.02);
+      pointer-events: none;
+    }
+
+    .rough-edge {
+      border-radius: 2px 4px 3px 6px / 4px 3px 6px 2px;
+    }
+
+    .about-letter {
+      padding: 3rem 0 5rem;
+    }
+
+    .about-letter__grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .about-letter__media {
+      position: sticky;
+      top: 120px;
+    }
+
+    .about-letter__badge {
+      display: inline-block;
+      padding: 0.45rem 0.9rem;
+      border-radius: var(--radius-full);
+      background: #d3e2ec;
+      color: #56656d;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-letter__title {
+      margin-bottom: 2rem;
+      max-width: 10ch;
+    }
+
+    .about-letter__image-wrap {
+      position: relative;
+    }
+
+    .about-letter__image {
+      width: 100%;
+      height: 540px;
+      object-fit: cover;
+      border-radius: 3rem 1rem 1rem 3rem;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.14);
+      transition: transform 0.5s ease;
+    }
+
+    .about-letter__image-wrap:hover .about-letter__image {
+      transform: scale(1.01);
+    }
+
+    .about-letter__glow {
+      position: absolute;
+      right: -1.5rem;
+      bottom: -1.5rem;
+      width: 8rem;
+      height: 8rem;
+      border-radius: 999px;
+      background: rgba(127, 166, 193, 0.2);
+      filter: blur(36px);
+      z-index: -1;
+    }
+
+    .about-letter__content {
+      margin-top: 3rem;
+    }
+
+    .about-letter__paper {
+      padding: 2rem 2rem 2.5rem;
+      box-shadow: 0 18px 48px rgba(60, 99, 123, 0.12);
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    .about-letter__paper:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 22px 56px rgba(60, 99, 123, 0.14);
+    }
+
+    .about-letter__quote {
+      margin-bottom: 2.5rem;
+      padding-left: 1.5rem;
+      border-left: 4px solid rgba(127, 166, 193, 0.35);
+      font-size: 1.2rem;
+      font-style: italic;
+      font-weight: 300;
+      color: var(--primary);
+      line-height: 1.7;
+    }
+
+    .about-letter__body {
+      display: grid;
+      gap: 1.25rem;
+    }
+
+    .about-letter__body p {
+      font-size: 1.02rem;
+      line-height: 1.9;
+      color: rgba(66, 71, 76, 0.95);
+    }
+
+    .about-letter__signoff {
+      padding-top: 1rem;
+      font-family: var(--font-headline);
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    .about-letter__name {
+      display: block;
+      margin-top: 0.35rem;
+      font-size: 1.9rem;
+      font-weight: 500;
+      color: var(--primary);
+    }
+
+    .about-philosophy {
+      background: var(--surface-low);
+      border-radius: var(--radius-lg);
+      margin: 0 1rem;
+      padding: 5rem 0;
+    }
+
+    .about-philosophy__grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .about-philosophy__title {
+      margin-bottom: 1.5rem;
+    }
+
+    .about-philosophy__copy {
+      display: grid;
+      gap: 1.25rem;
+    }
+
+    .about-philosophy__copy p {
+      font-size: 1.05rem;
+      line-height: 1.85;
+    }
+
+    .about-philosophy__cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      padding-top: 1.5rem;
+    }
+
+    .about-philosophy__card {
+      background: var(--surface-white);
+      border-radius: 1.25rem;
+      padding: 1.5rem;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .about-philosophy__icon {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 999px;
+      background: #e4edf3;
+      color: var(--primary);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-headline);
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+
+    .about-philosophy__card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .about-philosophy__media {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      align-items: start;
+    }
+
+    .about-philosophy__media img {
+      width: 100%;
+      object-fit: cover;
+      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.12);
+    }
+
+    .about-philosophy__img-a {
+      height: 260px;
+      border-radius: 1rem 3rem 3rem 1rem;
+    }
+
+    .about-philosophy__img-b {
+      height: 320px;
+      border-radius: 2rem 2rem 1rem 1rem;
+      margin-top: 2rem;
+    }
+
+    .about-testimonials {
+      padding: 5rem 0 1rem;
+    }
+
+    .about-testimonials__head {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .about-testimonials__label {
+      color: var(--primary);
+    }
+
+    .about-testimonials__title {
+      margin-top: 0.75rem;
+    }
+
+    .about-testimonials__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .about-testimonial {
+      background: var(--surface);
+      padding: 2rem;
+      border-radius: 1.25rem;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1.5rem;
+      transition: transform 0.25s ease;
+    }
+
+    .about-testimonial:hover {
+      transform: translateY(-4px);
+    }
+
+    .about-testimonial__quote {
+      font-style: italic;
+      line-height: 1.85;
+      color: var(--text-muted);
+    }
+
+    .about-testimonial__person {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+    }
+
+    .about-testimonial__initials {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 999px;
+      background: #d3e2ec;
+      color: var(--primary);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-headline);
+      font-weight: 800;
+      flex: 0 0 auto;
+    }
+
+    .about-testimonial__name {
+      font-family: var(--font-headline);
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--text-main);
+    }
+
+    .about-testimonial__meta {
+      font-size: 0.78rem;
+      color: var(--text-soft);
+    }
+
+    @media (max-width: 1100px) {
+      .about-letter__grid,
+      .about-philosophy__grid,
+      .about-testimonials__grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-letter__media {
+        position: static;
+      }
+
+      .about-letter__content {
+        margin-top: 0;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .about-letter,
+      .about-testimonials {
+        padding-top: 2.5rem;
+      }
+
+      .about-letter__paper {
+        padding: 1.5rem 1.25rem 2rem;
+      }
+
+      .about-letter__image,
+      .about-philosophy__img-a,
+      .about-philosophy__img-b {
+        height: 320px;
+      }
+
+      .about-philosophy {
+        margin: 0 0.75rem;
+        padding: 3.5rem 0;
+        border-radius: 2rem;
+      }
+
+      .about-philosophy__cards,
+      .about-philosophy__media {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body class="has-fixed-header about-page">
+  <header class="site-header">
+    <div class="site-header__inner container">
+      <a href="../index.html" class="site-logo" aria-label="thegroomer.ca home">thegroomer.ca</a>
+
+      <nav class="site-nav site-nav--desktop" aria-label="Primary navigation">
+        <a href="../index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html" class="is-active">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a href="contact.html" class="btn btn-primary site-header__cta">Book Consultation</a>
+
+      <button
+        class="site-menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mobileMenu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="site-mobile-menu" id="mobileMenu">
+      <nav class="site-mobile-nav" aria-label="Mobile navigation">
+        <a href="../index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html" class="is-active">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html" class="mobile-menu-cta btn btn-primary">Book Consultation</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="about-letter">
+      <div class="container about-letter__grid">
+        <div class="about-letter__media">
+          <span class="small-label about-letter__badge">Founding Story</span>
+          <h1 class="about-letter__title">A Letter from Sunyoung</h1>
+
+          <div class="about-letter__image-wrap">
+            <img
+              class="about-letter__image"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm1JK67G_8GDTRvLnQ26SFuqsFhOawHBgQHVE9w4GAWqhcqZID4vmK1v3NMd277D3k-pWTPTRpEHX05cDEfB3HkTFta53p_xSwRZQsEbBissqSCzX0fp32UO_Q1RVFvcaYf4X8OycSsEmGIcy2nkwN0D_xg--a9MfD2eDQgtgXwWtVsaCbqxankM0bAdGOwOfWt6qTbUC1sizp4y3ze9k4B6I4MJuWLIAwQsQjNM7QE5yB6Jh_QuUf1yvBoqO_qmkTVZT1CYZ5Z-Ff"
+              alt="Portrait of Sunyoung"
+            />
+            <div class="about-letter__glow" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="about-letter__content">
+          <div class="stationery-card rough-edge about-letter__paper">
+            <div class="about-letter__quote">
+              "When I first held a pair of grooming shears, I didn't see a haircut. I saw a way to communicate care to a being that speaks without words."
+            </div>
+
+            <div class="about-letter__body">
+              <p>Dear Valued Pet Owners,</p>
+
+              <p>I hope this message finds you and your beloved pets in great health and happiness. My name is Sunyoung, and I have had the immense privilege of serving as a groomer in the Niagara region for over a decade. I have been blessed with the opportunity to form incredible relationships with so many clients and their wonderful dogs. Most have entrusted me with their pets' care for their entire lives - I am deeply grateful humbled by the certitude placed in me.</p>
+
+              <p>I have experienced the joy and fulfillment of meeting a great deal of eager pet owners and working diligently to meet the growing demand. However, after years of operating at such a high pace, I found myself yearning for a steadier, more sustainable rhythm. The following transition allowed me to continue providing the exceptional care and attention your dogs deserve, without compromising on quality.</p>
+
+              <p>Throughout this new chapter, I have been exclusively partnering with clients who are particularly dedicated to the consistent upkeep of their dogs' health and well-being. I seek to build long-term, genuine relationships with pet owners who share my high standards of care and are committed to maintaining their pets' hygiene and appearance through regular, pre-booked appointments.</p>
+
+              <p>My goal is to reach our highest potential together, providing precisely what is required to keep your pets happy, healthy, and looking their best. I am excited about the prospect of continuing this journey with you and your pets, focusing on quality, consistency, and the genuine connection that has always been at the heart of my practice.</p>
+
+              <p>Thank you for your understanding and continued support. I look forward to building meaningful bonds with those who share my vision and dedication to the greatest standards of pet care.</p>
+
+              <p class="about-letter__signoff">
+                Warm regards,
+                <span class="about-letter__name">Sunyoung</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-philosophy">
+      <div class="container about-philosophy__grid">
+        <div>
+          <h2 class="about-philosophy__title">Care first, cut second</h2>
+
+          <div class="about-philosophy__copy">
+            <p>At thegroomer.ca, my services are tailored to discerning pet owners who seek the very best for their beloved companions.</p>
+
+            <p>My mission is to elevate the standards of dog grooming by providing personalized, holistic care and artistry that honors the unique needs and personalities of each dog. I strive to build enduring relationships with both pets and their owners so that every visit is a serene, familiar and positive experience. Through expert techniques and anchors in ethics of care, I aim to enhance the well-being and happiness of our furry friends.</p>
+
+            <p>As the founder and namesake of thegroomer.ca, I have been perfecting my craft for 12 years as one of the most exclusive dog grooming technicians in the Niagara Region. Certified and specially knowledgeable in canine health and behavior, I have cared for over one thousand clients with unwavering dedication, many for their entire lifetime. My approach is not just about grooming; it's about fostering genuine connections and comprehensive values so your pets may feel their best selves.</p>
+
+            <p>Within my passion and pursuits in excellence, I am committed to continuing my legacy of top-tier, personalized care.</p>
+          </div>
+
+          <div class="about-philosophy__cards">
+            <article class="about-philosophy__card">
+              <div class="about-philosophy__icon">✦</div>
+              <h3>Organic Botanicals</h3>
+              <p>We use hand-selected, coat-conscious products chosen for comfort, softness, and a calm finish.</p>
+            </article>
+
+            <article class="about-philosophy__card">
+              <div class="about-philosophy__icon">❋</div>
+              <h3>Calm Environment</h3>
+              <p>A quieter, more personal setting designed to support dogs who thrive with gentle one-on-one attention.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="about-philosophy__media">
+          <img
+            class="about-philosophy__img-a"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5j4TUQK-GoofV9yvOiSYGCmVLKyLspokyzxgzKDXhAp5WVOPkpGlEg0dEsK1Syv4SDgTvIwDd_F_KSairVAZM1F_cVqI2dGfHB2r3isXfY1nuuFqT6Yh6mJUyBOTPmTUdSAVGAEmAm7eo3YoTdPOwjuTM3Sz3lGZC--JLyIhbAy72oywXZezaCb1_XF4gL2oZDfFyE5FoUp_7SdXbbV35m3DDzgraw1tUlqs40h-6vlb9tCq6HvGrzcX17AU8zgfzi2MrnKI_0Itf"
+            alt="Grooming tools"
+          />
+          <img
+            class="about-philosophy__img-b"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAV3QuV3aBVPeC2PiP2ZalNnGySdlCBEpOG3RbqusV5PbMU6b3NEzTrHoFCNhD_PUXXE3N4ZkCmQkvLawwRu_m7nkkQiAelrhHNaxzEt4bnn3cieagJVoUCHtQKQZ6DYE_ezTBZez8tV6WfdOCUS5eMbmwFSVl5l0todGARBRk18OEeQiLZZGw-oSPEKW_U3xd5u7TAE7VGU0lV080b_x-pUEbWaMFy66Titl9U7nYhpVAP54hD7Hb2USQbIUI9UZ8AfeEkthWoZI9u"
+            alt="Happy dog"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="about-testimonials">
+      <div class="container">
+        <div class="about-testimonials__head">
+          <span class="small-label about-testimonials__label">Testimonials</span>
+          <h2 class="about-testimonials__title">Client Love</h2>
+        </div>
+
+        <div class="about-testimonials__grid">
+          <article class="about-testimonial">
+            <p class="about-testimonial__quote">
+              "I used to have to drag Barnaby into the groomers. Now, he practically runs to Sunyoung's door. The change in his anxiety level is nothing short of a miracle. He comes home looking like a champion and acting like he's just had a spa day."
+            </p>
+
+            <div class="about-testimonial__person">
+              <span class="about-testimonial__initials">SC</span>
+              <div>
+                <div class="about-testimonial__name">Sarah Chen</div>
+                <div class="about-testimonial__meta">Parent of Barnaby (Toy Poodle)</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="about-testimonial">
+            <p class="about-testimonial__quote">
+              "The attention to detail at thegroomer.ca is unlike anything else in the city. Sunyoung truly understands breed standards but more importantly, she understands my senior dog's physical limitations. Exceptional care."
+            </p>
+
+            <div class="about-testimonial__person">
+              <span class="about-testimonial__initials">JM</span>
+              <div>
+                <div class="about-testimonial__name">James Miller</div>
+                <div class="about-testimonial__meta">Parent of Duke (Senior Golden Retriever)</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="about-testimonial">
+            <p class="about-testimonial__quote">
+              "Finally, a groomer who listens! Sunyoung spent 20 minutes just talking to me about my dog's skin sensitivities before we even started. The 'Artisanal Sanctuary' isn't just a name, it's exactly what it feels like."
+            </p>
+
+            <div class="about-testimonial__person">
+              <span class="about-testimonial__initials">AL</span>
+              <div>
+                <div class="about-testimonial__name">Amanda Lee</div>
+                <div class="about-testimonial__meta">Parent of Luna (Bichon Frise)</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <div class="site-footer__brand">
+        <div class="site-footer__logo">thegroomer.ca</div>
+        <p>
+          Elevated dog grooming experiences through personalized, holistic care and artistry in the heart of Ontario.
+        </p>
+
+        <div class="site-footer__icons">
+          <a href="mailto:thegroomer.ca@gmail.com" aria-label="Email">
+            <span class="footer-dot"></span>
+          </a>
+          <a href="https://www.instagram.com/thegroomer.ca/" aria-label="Instagram">
+            <span class="footer-dot"></span>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="site-footer__links">
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Connect</h4>
+        <ul class="site-footer__links">
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="contact.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom container">
+      © 2024 thegroomer.ca. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | thegroomer.ca</title>
+  <meta
+    name="description"
+    content="Explore full groom packages, bath and brush appointments, tidy-ups, and spa extras at thegroomer.ca."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+
+  <style>
+    .services-page {
+      background: var(--surface);
+    }
+
+    .services-hero {
+      padding: 3rem 0 2rem;
+      background: var(--surface);
+    }
+
+    .services-hero__row {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .services-hero__label {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .services-hero__title {
+      max-width: 12ch;
+    }
+
+    .services-hero__title em {
+      color: var(--primary-soft);
+      font-style: italic;
+      font-weight: 700;
+    }
+
+    .services-hero__copy {
+      max-width: 22rem;
+      font-size: 1.05rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .packages-section {
+      padding: 2rem 0 5rem;
+    }
+
+    .packages-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    .package-feature {
+      background: var(--surface-white);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      box-shadow: 0 12px 40px rgba(60, 99, 123, 0.06);
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .package-feature__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      gap: 1rem;
+    }
+
+    .package-feature__title {
+      margin-bottom: 0.35rem;
+    }
+
+    .package-feature__meta {
+      font-family: var(--font-headline);
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-soft);
+    }
+
+    .package-feature__price-wrap {
+      text-align: right;
+      flex: 0 0 auto;
+    }
+
+    .package-feature__price-label {
+      display: block;
+      font-family: var(--font-headline);
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-soft);
+      margin-bottom: 0.3rem;
+    }
+
+    .package-feature__price {
+      font-family: var(--font-headline);
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1;
+    }
+
+    .package-feature__media {
+      position: relative;
+      overflow: hidden;
+      border-radius: 1.25rem;
+      height: 320px;
+      background: var(--surface-low);
+    }
+
+    .package-feature__media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .package-feature__media::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(60, 99, 123, 0.16), rgba(60, 99, 123, 0));
+      pointer-events: none;
+    }
+
+    .package-feature__body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .package-feature__copy p {
+      margin-bottom: 1.5rem;
+    }
+
+    .package-feature__list {
+      list-style: none;
+      display: grid;
+      gap: 0.85rem;
+    }
+
+    .package-feature__list li {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+      font-size: 0.95rem;
+      font-weight: 400;
+      color: var(--text-main);
+    }
+
+    .package-feature__list li::before {
+      content: "";
+      width: 0.65rem;
+      height: 0.65rem;
+      border-radius: 999px;
+      background: var(--primary-soft);
+      flex: 0 0 auto;
+    }
+
+    .package-stack {
+      display: grid;
+      gap: 2rem;
+    }
+
+    .package-card {
+      background: var(--surface-low);
+      border-radius: 1.25rem;
+      padding: 2rem;
+      transition: background 0.25s ease, transform 0.25s ease;
+    }
+
+    .package-card:hover {
+      background: var(--surface-mid);
+      transform: translateY(-3px);
+    }
+
+    .package-card__head {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .package-card__price {
+      font-family: var(--font-headline);
+      font-size: 1.7rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1;
+      flex: 0 0 auto;
+    }
+
+    .package-card__copy {
+      font-size: 0.95rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .package-card__meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+      font-family: var(--font-headline);
+      font-size: 0.66rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-soft);
+    }
+
+    .package-card__list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.55rem 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .package-card__list li {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      font-size: 0.82rem;
+      color: var(--text-main);
+    }
+
+    .package-card__list li::before {
+      content: "";
+      width: 0.35rem;
+      height: 0.35rem;
+      border-radius: 999px;
+      background: var(--primary);
+      flex: 0 0 auto;
+    }
+
+    .package-card__link {
+      text-decoration: none;
+      color: var(--primary);
+      font-family: var(--font-headline);
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    .extras-section {
+      background: var(--surface-high);
+      padding: 5rem 0;
+    }
+
+    .extras-head {
+      margin-bottom: 2.5rem;
+    }
+
+    .extras-head h2 {
+      margin-bottom: 0.75rem;
+    }
+
+    .extras-head p {
+      max-width: 34rem;
+    }
+
+    .extras-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+
+    .extra-card {
+      background: var(--surface-white);
+      padding: 1.75rem;
+      box-shadow: var(--shadow-soft);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      min-height: 100%;
+    }
+
+    .extra-card--a {
+      border-radius: 3rem 1rem 1rem 3rem;
+    }
+
+    .extra-card--b {
+      border-radius: 1rem 3rem 3rem 1rem;
+    }
+
+    .extra-card__icon {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 999px;
+      background: #e4edf3;
+      color: var(--primary);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-headline);
+      font-weight: 800;
+      font-size: 1rem;
+    }
+
+    .extra-card__price {
+      margin-top: auto;
+      font-family: var(--font-headline);
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    .prep-section {
+      padding: 5rem 0;
+    }
+
+    .prep-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .prep-media {
+      position: relative;
+    }
+
+    .prep-media__glow {
+      position: absolute;
+      inset: -2rem;
+      background: rgba(127, 166, 193, 0.12);
+      border-radius: 999px;
+      filter: blur(42px);
+      z-index: 0;
+    }
+
+    .prep-media__frame {
+      position: relative;
+      z-index: 1;
+      background: var(--surface-white);
+      padding: 0.5rem;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-soft);
+      transform: rotate(2deg);
+    }
+
+    .prep-media__frame img {
+      width: 100%;
+      border-radius: 1rem;
+      height: 460px;
+      object-fit: cover;
+    }
+
+    .prep-list {
+      display: grid;
+      gap: 2rem;
+    }
+
+    .prep-item {
+      display: grid;
+      grid-template-columns: 3rem 1fr;
+      gap: 1rem;
+      align-items: start;
+    }
+
+    .prep-item__num {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 999px;
+      background: #d3e2ec;
+      color: var(--primary);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-headline);
+      font-weight: 800;
+    }
+
+    .prep-item h3 {
+      margin-bottom: 0.35rem;
+      font-size: 1.2rem;
+    }
+
+    .services-cta {
+      padding: 1rem 0 0;
+    }
+
+    .services-cta__card {
+      position: relative;
+      overflow: hidden;
+      background: var(--primary);
+      border-radius: var(--radius-lg);
+      padding: 4rem 2rem;
+      text-align: center;
+      color: #fff;
+    }
+
+    .services-cta__glow {
+      position: absolute;
+      top: -4rem;
+      right: -4rem;
+      width: 16rem;
+      height: 16rem;
+      border-radius: 999px;
+      background: rgba(127, 166, 193, 0.18);
+      filter: blur(40px);
+      pointer-events: none;
+    }
+
+    .services-cta__title {
+      position: relative;
+      z-index: 1;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    .services-cta__copy {
+      position: relative;
+      z-index: 1;
+      max-width: 36rem;
+      margin: 0 auto 2rem;
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 1.05rem;
+    }
+
+    .services-cta__actions {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn-light {
+      background: #fff;
+      color: var(--primary);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .btn-outline-light {
+      background: transparent;
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.28);
+    }
+
+    @media (max-width: 1100px) {
+      .packages-grid,
+      .prep-grid,
+      .extras-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .services-hero {
+        padding-top: 2rem;
+      }
+
+      .package-feature__body {
+        grid-template-columns: 1fr;
+      }
+
+      .package-card__list {
+        grid-template-columns: 1fr;
+      }
+
+      .prep-media__frame img {
+        height: 340px;
+      }
+
+      .services-cta__actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .services-cta__actions .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body class="has-fixed-header services-page">
+  <header class="site-header">
+    <div class="site-header__inner container">
+      <a href="../index.html" class="site-logo" aria-label="thegroomer.ca home">thegroomer.ca</a>
+
+      <nav class="site-nav site-nav--desktop" aria-label="Primary navigation">
+        <a href="../index.html">Home</a>
+        <a href="services.html" class="is-active">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a href="contact.html" class="btn btn-primary site-header__cta">Book Consultation</a>
+
+      <button
+        class="site-menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mobileMenu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="site-mobile-menu" id="mobileMenu">
+      <nav class="site-mobile-nav" aria-label="Mobile navigation">
+        <a href="../index.html">Home</a>
+        <a href="services.html" class="is-active">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html" class="mobile-menu-cta btn btn-primary">Book Consultation</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="services-hero">
+      <div class="container services-hero__row">
+        <div>
+          <span class="small-label services-hero__label">Our Services</span>
+          <h1 class="services-hero__title">The Art of <em>Grooming.</em></h1>
+        </div>
+
+        <p class="services-hero__copy">
+          Bespoke care for your most loyal companion. We treat every session as a work of art, focusing on comfort, precision, and style.
+        </p>
+      </div>
+    </section>
+
+    <section class="packages-section">
+      <div class="container packages-grid">
+        <article class="package-feature">
+          <div class="package-feature__top">
+            <div>
+              <h2 class="package-feature__title">Full Groom</h2>
+              <div class="package-feature__meta">2.5 – 4 Hours</div>
+            </div>
+
+            <div class="package-feature__price-wrap">
+              <span class="package-feature__price-label">Starts at</span>
+              <div class="package-feature__price">$85</div>
+            </div>
+          </div>
+
+          <div class="package-feature__media">
+            <img
+              src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=1200&q=80"
+              alt="Professional groomer hand-scissoring a fluffy white dog"
+            />
+          </div>
+
+          <div class="package-feature__body">
+            <div class="package-feature__copy">
+              <p>
+                Our signature head-to-tail experience. Perfect for maintaining your dog’s breed-standard look or a custom personality cut.
+              </p>
+
+              <a href="contact.html" class="btn btn-primary">Book Package</a>
+            </div>
+
+            <ul class="package-feature__list">
+              <li>Precision scissor and clipper cut</li>
+              <li>Double deep-cleaning bath</li>
+              <li>Blow dry and brushing</li>
+              <li>Nail trimming and ear cleaning</li>
+              <li>Sanitary and paw pad trim</li>
+            </ul>
+          </div>
+        </article>
+
+        <div class="package-stack">
+          <article class="package-card">
+            <div class="package-card__head">
+              <div>
+                <h3>Bath &amp; Brush</h3>
+              </div>
+              <div class="package-card__price">$55+</div>
+            </div>
+
+            <p class="package-card__copy">
+              A refreshing maintenance session to keep the coat healthy and smelling beautiful between full grooms.
+            </p>
+
+            <div class="package-card__meta">
+              <span>1.5 Hours</span>
+              <span>Spa Bath</span>
+            </div>
+
+            <ul class="package-card__list">
+              <li>Bath and dry</li>
+              <li>Nail trim</li>
+              <li>Brush out</li>
+              <li>Ear care</li>
+            </ul>
+
+            <a href="contact.html" class="package-card__link">Select this service →</a>
+          </article>
+
+          <article class="package-card">
+            <div class="package-card__head">
+              <div>
+                <h3>Tidy-Up</h3>
+              </div>
+              <div class="package-card__price">$65+</div>
+            </div>
+
+            <p class="package-card__copy">
+              Perfect for in-between visits to clear hair from eyes, paws, and sanitary areas without a full body cut.
+            </p>
+
+            <div class="package-card__meta">
+              <span>2 Hours</span>
+              <span>Face Trim</span>
+            </div>
+
+            <ul class="package-card__list">
+              <li>Bath and dry</li>
+              <li>Face and paws</li>
+              <li>Sanitary trim</li>
+              <li>Nail grinding</li>
+            </ul>
+
+            <a href="contact.html" class="package-card__link">Select this service →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="extras-section">
+      <div class="container">
+        <div class="extras-head">
+          <h2>Add-ons &amp; Spa Extras</h2>
+          <p>
+            Elevate their experience with curated treatments designed for comfort, coat health, and a little indulgence.
+          </p>
+        </div>
+
+        <div class="extras-grid">
+          <article class="extra-card extra-card--a">
+            <div class="extra-card__icon">✦</div>
+            <h3>Blueberry Facial</h3>
+            <p>Antioxidant-rich cleanse that targets tear stains and leaves a fresh, clean finish.</p>
+            <div class="extra-card__price">$12</div>
+          </article>
+
+          <article class="extra-card extra-card--b">
+            <div class="extra-card__icon">≈</div>
+            <h3>De-shedding</h3>
+            <p>Special shampoo and brushing support to reduce loose undercoat and seasonal shedding.</p>
+            <div class="extra-card__price">$25+</div>
+          </article>
+
+          <article class="extra-card extra-card--a">
+            <div class="extra-card__icon">❋</div>
+            <h3>Organic Paw Balm</h3>
+            <p>Soothing protection for sensitive paw pads, especially during hot pavement or winter salt conditions.</p>
+            <div class="extra-card__price">$8</div>
+          </article>
+
+          <article class="extra-card extra-card--b">
+            <div class="extra-card__icon">✚</div>
+            <h3>Teeth Brushing</h3>
+            <p>Enzyme brushing and freshening support for cleaner teeth and better breath between vet cleanings.</p>
+            <div class="extra-card__price">$15</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="prep-section">
+      <div class="container prep-grid">
+        <div class="prep-media">
+          <div class="prep-media__glow" aria-hidden="true"></div>
+          <div class="prep-media__frame">
+            <img
+              src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=1200&q=80"
+              alt="Calm dog in a bright modern grooming salon"
+            />
+          </div>
+        </div>
+
+        <div>
+          <h2 style="margin-bottom: 2rem;">Before Your Visit</h2>
+
+          <div class="prep-list">
+            <div class="prep-item">
+              <div class="prep-item__num">01</div>
+              <div>
+                <h3>Vaccination Records</h3>
+                <p>
+                  For the safety of all guests, proof of Rabies, Distemper, and Bordetella is requested for new clients.
+                </p>
+              </div>
+            </div>
+
+            <div class="prep-item">
+              <div class="prep-item__num">02</div>
+              <div>
+                <h3>Arrival Times</h3>
+                <p>
+                  We work on a carefully planned schedule. Please arrive a little early so we can review styling and care details.
+                </p>
+              </div>
+            </div>
+
+            <div class="prep-item">
+              <div class="prep-item__num">03</div>
+              <div>
+                <h3>Cancellations</h3>
+                <p>
+                  Life happens. We kindly ask for 48 hours notice whenever an appointment time needs to be changed.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-cta">
+      <div class="container">
+        <div class="services-cta__card">
+          <div class="services-cta__glow" aria-hidden="true"></div>
+
+          <h2 class="services-cta__title">Ready to pamper?</h2>
+          <p class="services-cta__copy">
+            Book a consultation or schedule your next visit today. Your pet’s artisanal transformation awaits.
+          </p>
+
+          <div class="services-cta__actions">
+            <a href="contact.html" class="btn btn-light">Book Consultation</a>
+            <a href="contact.html" class="btn btn-outline-light">Call Shop</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <div class="site-footer__brand">
+        <div class="site-footer__logo">thegroomer.ca</div>
+        <p>
+          Elevated dog grooming experiences through personalized, holistic care and artistry in the heart of Ontario.
+        </p>
+
+        <div class="site-footer__icons">
+          <a href="mailto:hello@thegroomer.ca" aria-label="Email">
+            <span class="footer-dot"></span>
+          </a>
+          <a href="https://www.instagram.com/thegroomer.ca/" aria-label="Instagram">
+            <span class="footer-dot"></span>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="site-footer__links">
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Connect</h4>
+        <ul class="site-footer__links">
+          <li><a href="https://www.instagram.com/thegroomer.ca/">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="contact.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom container">
+      © 2024 thegroomer.ca. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

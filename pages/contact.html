@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact & FAQ | thegroomer.ca</title>
+  <meta
+    name="description"
+    content="Contact thegroomer.ca for appointments, questions, and grooming inquiries. Browse common questions about booking, services, and policies."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+
+  <style>
+    .contact-page {
+      background: var(--surface);
+    }
+
+    .contact-hero {
+      padding: 3rem 0 2rem;
+    }
+
+    .contact-hero__row {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      align-items: flex-start;
+    }
+
+    .contact-hero__label {
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+    }
+
+    .contact-hero__title {
+      line-height: 0.96;
+      max-width: 14ch;
+    }
+
+    .contact-hero__title em {
+      color: var(--primary);
+      font-style: italic;
+      font-weight: 700;
+    }
+
+    .contact-hero__copy {
+      max-width: 34rem;
+      font-size: 1.05rem;
+    }
+
+    .contact-main {
+      padding: 2rem 0 5rem;
+    }
+
+    .contact-main__grid {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    .contact-info {
+      display: grid;
+      gap: 2rem;
+    }
+
+    .contact-info__panel {
+      position: relative;
+      overflow: hidden;
+      background: var(--surface-low);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+    }
+
+    .contact-info__content {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      gap: 2rem;
+    }
+
+    .contact-info__panel h2 {
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-info__stack {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .contact-info__row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .contact-info__icon {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 999px;
+      background: var(--surface-white);
+      color: var(--primary);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-headline);
+      font-weight: 800;
+      flex: 0 0 auto;
+    }
+
+    .contact-info__text {
+      font-weight: 500;
+      color: var(--text-main);
+      text-decoration: none;
+    }
+
+    .contact-info__text--muted {
+      color: var(--text-main);
+    }
+
+    .contact-info__bgmark {
+      position: absolute;
+      right: -1rem;
+      bottom: -1.5rem;
+      font-family: var(--font-headline);
+      font-size: 8rem;
+      font-weight: 800;
+      line-height: 1;
+      opacity: 0.05;
+      pointer-events: none;
+    }
+
+    .contact-info__image {
+      overflow: hidden;
+      border-radius: 3rem 1rem 1rem 3rem;
+      height: 260px;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .contact-info__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .contact-form-wrap {
+      background: var(--surface-white);
+      padding: 2rem;
+      border-radius: 1.25rem;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .contact-form {
+      display: grid;
+      gap: 1.25rem;
+    }
+
+    .contact-form__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+
+    .contact-form .form-group {
+      margin-bottom: 0;
+    }
+
+    .faq-section {
+      background: var(--surface-mid);
+      padding: 5rem 0;
+    }
+
+    .faq-head {
+      margin-bottom: 3rem;
+    }
+
+    .faq-head__label {
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+    }
+
+    .faq-head h2 {
+      margin-bottom: 0.5rem;
+    }
+
+    .faq-head p {
+      max-width: 34rem;
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .faq-column {
+      display: grid;
+      gap: 1.25rem;
+    }
+
+    .faq-column__title {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: var(--primary);
+      font-size: 1.2rem;
+    }
+
+    .faq-icon {
+      width: 2.25rem;
+      height: 2.25rem;
+      border-radius: 999px;
+      background: #e4edf3;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      font-family: var(--font-headline);
+      font-weight: 800;
+      flex: 0 0 auto;
+    }
+
+    .faq-card {
+      background: var(--surface-low);
+      border-radius: 1.25rem;
+      padding: 1.75rem;
+    }
+
+    .faq-card h4 {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+
+    .faq-card p {
+      font-size: 0.94rem;
+      line-height: 1.75;
+    }
+
+    .faq-callout {
+      margin-top: 3rem;
+      background: rgba(127, 166, 193, 0.18);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      border: 1px solid rgba(60, 99, 123, 0.08);
+    }
+
+    .faq-callout h3 {
+      margin-bottom: 0.35rem;
+      font-size: 1.5rem;
+      color: var(--text-main);
+    }
+
+    .faq-callout p {
+      color: rgba(15, 60, 83, 0.7);
+    }
+
+    @media (min-width: 900px) {
+      .contact-hero__row {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+    }
+
+    @media (max-width: 1100px) {
+      .contact-main__grid,
+      .faq-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .contact-hero {
+        padding-top: 2rem;
+      }
+
+      .contact-form__grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-info__panel,
+      .contact-form-wrap,
+      .faq-card,
+      .faq-callout {
+        padding: 1.5rem;
+      }
+
+      .contact-info__image {
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+<body class="has-fixed-header contact-page">
+  <header class="site-header">
+    <div class="site-header__inner container">
+      <a href="../index.html" class="site-logo" aria-label="thegroomer.ca home">thegroomer.ca</a>
+
+      <nav class="site-nav site-nav--desktop" aria-label="Primary navigation">
+        <a href="../index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="is-active">Contact</a>
+      </nav>
+
+      <a href="contact.html" class="btn btn-primary site-header__cta">Book Consultation</a>
+
+      <button
+        class="site-menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mobileMenu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="site-mobile-menu" id="mobileMenu">
+      <nav class="site-mobile-nav" aria-label="Mobile navigation">
+        <a href="../index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="is-active">Contact</a>
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html" class="mobile-menu-cta btn btn-primary">Book Consultation</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-hero">
+      <div class="container">
+        <div class="contact-hero__row">
+          <div>
+            <span class="small-label contact-hero__label">Get in touch</span>
+            <h1 class="contact-hero__title">Contact &amp; <em>FAQ</em></h1>
+          </div>
+
+          <p class="contact-hero__copy">
+            Whether it’s a first-time puppy visit or a specialized artisanal cut, we’re here to help. Explore our frequent questions or reach out directly.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-main">
+      <div class="container contact-main__grid">
+        <div class="contact-info">
+          <div class="contact-info__panel">
+            <div class="contact-info__content">
+              <div>
+                <h2>Artisanal Sanctuary</h2>
+                <p>Niagara Region, Ontario<br />Dedicated to your pet’s comfort and style.</p>
+              </div>
+
+              <div class="contact-info__stack">
+                <div class="contact-info__row">
+                  <span class="contact-info__icon">✉</span>
+                  <a class="contact-info__text" href="mailto:thegroomer.ca@gmail.com">thegroomer.ca@gmail.com</a>
+                </div>
+
+                <div class="contact-info__row">
+                  <span class="contact-info__icon">⌂</span>
+                  <span class="contact-info__text contact-info__text--muted">Niagara Region, Ontario</span>
+                </div>
+
+                <div class="contact-info__row">
+                  <span class="contact-info__icon">◎</span>
+                  <a
+                    class="contact-info__text"
+                    href="https://www.instagram.com/thegroomer.ca/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    @thegroomer.ca
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-info__bgmark" aria-hidden="true">✦</div>
+          </div>
+
+          <div class="contact-info__image">
+            <img
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvFjXtfM56LwMHH8jjZSFwVtwuYnqbNydwCfzcTSkBkG0M6zgcpTInWHHfytf6Zm0ayO3Fdn1MuIyJsavSD9sfuO7VWqPDJRVJyAtrqVfH3Hdd9_YRjxoJczZT8-PEHUhhPvpbky_t9Of2uNG2KVBPbBDfNmF4rTPlcxqGbLXulbJiFYeUR_yfmaM5QevycwIVBukX020LAwSYW9uG4eubQpggMfpYdl07YE5nsZP0WeJ2Suy1nUjyHrjMiqW5yQ07-WZklRwIj5P8"
+              alt="Well-groomed golden retriever in a boutique studio"
+            />
+          </div>
+        </div>
+
+        <div class="contact-form-wrap">
+          <form class="contact-form" action="#" method="post">
+            <div class="contact-form__grid">
+              <div class="form-group">
+                <label for="contact-name">Your Name</label>
+                <input id="contact-name" name="name" type="text" placeholder="Enter your name" />
+              </div>
+
+              <div class="form-group">
+                <label for="pet-name">Pet's Name</label>
+                <input id="pet-name" name="pet_name" type="text" placeholder="Enter pet's name" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">Email Address</label>
+              <input id="contact-email" name="email" type="email" placeholder="hello@example.com" />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Your Message</label>
+              <textarea id="contact-message" name="message" placeholder="Tell us how we can help..."></textarea>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="container">
+        <div class="faq-head">
+          <span class="small-label faq-head__label">Knowledge Base</span>
+          <h2>Frequently Asked</h2>
+          <p>Everything you need to know about our boutique grooming experience.</p>
+        </div>
+
+        <div class="faq-grid">
+          <div class="faq-column">
+            <h3 class="faq-column__title">
+              <span class="faq-icon">01</span>
+              Booking &amp; Scheduling
+            </h3>
+
+            <article class="faq-card">
+              <h4>How do I book an appointment?</h4>
+              <p>
+                The easiest way to book is via our online portal using the “Book Now” button. Alternatively, you can message us on Instagram for specialized requests.
+              </p>
+            </article>
+
+            <article class="faq-card">
+              <h4>What is your cancellation policy?</h4>
+              <p>
+                We require 24 hours notice for any cancellations. Cancellations within the 24-hour window may be subject to a rescheduling fee.
+              </p>
+            </article>
+          </div>
+
+          <div class="faq-column">
+            <h3 class="faq-column__title">
+              <span class="faq-icon">02</span>
+              Services &amp; Policies
+            </h3>
+
+            <article class="faq-card">
+              <h4>What areas do you serve?</h4>
+              <p>
+                We proudly serve the entire Niagara Region, including St. Catharines, Niagara Falls, and Welland.
+              </p>
+            </article>
+
+            <article class="faq-card">
+              <h4>Do you have specific breed policies?</h4>
+              <p>
+                We welcome all breeds. However, for first-time visits of specialized breeds like Poodles or Doodles, we recommend a consultation.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <div class="faq-callout">
+          <div>
+            <h3>Still have questions?</h3>
+            <p>Our dedicated support team is ready to assist your pet’s needs.</p>
+          </div>
+
+          <a class="btn btn-secondary" href="mailto:thegroomer.ca@gmail.com">
+            Contact via Email
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <div class="site-footer__brand">
+        <div class="site-footer__logo">thegroomer.ca</div>
+        <p>
+          Elevated dog grooming experiences through personalized, holistic care and artistry in the heart of Ontario.
+        </p>
+
+        <div class="site-footer__icons">
+          <a href="mailto:thegroomer.ca@gmail.com" aria-label="Email">
+            <span class="footer-dot"></span>
+          </a>
+          <a
+            href="https://www.instagram.com/thegroomer.ca/"
+            aria-label="Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="footer-dot"></span>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="site-footer__links">
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Connect</h4>
+        <ul class="site-footer__links">
+          <li>
+            <a
+              href="https://www.instagram.com/thegroomer.ca/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram
+            </a>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom container">
+      © 2024 thegroomer.ca. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
