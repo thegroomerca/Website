@@ -1,10 +1,16 @@
-document.addEventListener("DOMContentLoaded", function () {
+function initSiteMenu() {
   const toggle = document.querySelector(".site-menu-toggle");
   const mobileMenu = document.querySelector(".site-mobile-menu");
 
   if (!toggle || !mobileMenu) {
     return;
   }
+
+  if (toggle.dataset.menuInitialized === "true") {
+    return;
+  }
+
+  toggle.dataset.menuInitialized = "true";
 
   function closeMenu() {
     mobileMenu.classList.remove("is-open");
@@ -47,4 +53,8 @@ document.addEventListener("DOMContentLoaded", function () {
       closeMenu();
     }
   });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  initSiteMenu();
 });

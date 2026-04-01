@@ -9,9 +9,9 @@
     content="Elevated dog grooming experiences through personalized, holistic care and artistry."
   />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/branding/favicon-32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/branding/favicon-16.png" />
-  <link rel="apple-touch-icon" href="assets/img/branding/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/branding/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/branding/favicon-16.png" />
+  <link rel="apple-touch-icon" href="/assets/img/branding/apple-touch-icon.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,49 +20,10 @@
     rel="stylesheet"
   />
 
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
 </head>
 <body class="has-fixed-header">
-  <header class="site-header">
-    <div class="site-header__inner container">
-      <a href="index.html" class="site-logo" aria-label="thegroomer.ca home">thegroomer.ca</a>
-
-      <nav class="site-nav site-nav--desktop" aria-label="Primary navigation">
-        <a href="index.html" class="is-active">Home</a>
-        <a href="pages/services.html">Services</a>
-        <a href="pages/gallery.html">Gallery</a>
-        <a href="pages/about.html">About</a>
-        <a href="pages/contact.html">Contact</a>
-      </nav>
-
-      <a href="pages/contact.html" class="btn btn-primary site-header__cta">Book Consultation</a>
-
-      <button
-        class="site-menu-toggle"
-        type="button"
-        aria-label="Open menu"
-        aria-expanded="false"
-        aria-controls="mobileMenu"
-      >
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-
-    <div class="site-mobile-menu" id="mobileMenu">
-      <nav class="site-mobile-nav" aria-label="Mobile navigation">
-        <a href="index.html" class="is-active">Home</a>
-        <a href="pages/services.html">Services</a>
-        <a href="pages/gallery.html">Gallery</a>
-        <a href="pages/about.html">About</a>
-        <a href="pages/contact.html">Contact</a>
-        <a href="pages/terms.html">Terms</a>
-        <a href="pages/privacy.html">Privacy</a>
-        <a href="pages/contact.html" class="mobile-menu-cta btn btn-primary">Book Consultation</a>
-      </nav>
-    </div>
-  </header>
+  <div id="site-header"></div>
 
   <main>
     <section class="hero">
@@ -79,8 +40,8 @@
           </p>
 
           <div class="hero-actions">
-            <a href="pages/services.html" class="btn btn-primary">Our Services</a>
-            <a href="pages/gallery.html" class="btn btn-secondary">View Gallery</a>
+            <a href="/pages/services.html" class="btn btn-primary">Our Services</a>
+            <a href="/pages/gallery.html" class="btn btn-secondary">View Gallery</a>
           </div>
         </div>
 
@@ -156,7 +117,7 @@
             <p>Hand-tailored services using premium organic ingredients and master-level artistry.</p>
           </div>
 
-          <a href="pages/services.html" class="section-link">View Full Menu →</a>
+          <a href="/pages/services.html" class="section-link">View Full Menu →</a>
         </div>
 
         <div class="services-grid">
@@ -297,47 +258,46 @@
     </section>
   </main>
 
-<footer class="site-footer">
-  <div class="container site-footer__grid">
-    <div class="site-footer__brand">
-      <div
-        class="site-footer__logo"
-        style="display:flex; align-items:center; gap:1.25rem;"
-      >
-        <a href="index.html" aria-label="thegroomer.ca home" style="display:block;">
-          <img
-            src="assets/img/branding/logo-mark.png"
-            alt="thegroomer.ca"
-            style="height:150px; width:150px; object-fit:contain; display:block; flex:0 0 150px;"
-          />
-        </a>
-        <p style="margin:0; max-width:240px; line-height:1.7;">
-          Elevated dog grooming experiences through personalized, holistic care and artistry in the heart of Ontario.
-        </p>
-      </div>
-    </div>
+  <div id="site-footer"></div>
 
-    <div>
-      <h4>Quick Links</h4>
-      <ul class="site-footer__links">
-        <li><a href="pages/services.html">Services</a></li>
-        <li><a href="pages/gallery.html">Gallery</a></li>
-        <li><a href="pages/terms.html">Terms of Service</a></li>
-        <li><a href="pages/privacy.html">Privacy Policy</a></li>
-      </ul>
-    </div>
+  <script src="/assets/js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      Promise.all([
+        fetch("/partials/header.html").then(function (res) {
+          return res.text();
+        }),
+        fetch("/partials/footer.html").then(function (res) {
+          return res.text();
+        })
+      ])
+        .then(function (parts) {
+          document.getElementById("site-header").innerHTML = parts[0];
+          document.getElementById("site-footer").innerHTML = parts[1];
 
-    <div>
-      <h4>Connect</h4>
-      <ul class="site-footer__links">
-        <li><a href="https://www.instagram.com/thegroomer.ca/">Instagram</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="pages/contact.html">FAQ</a></li>
-      </ul>
-    </div>
-  </div>
+          if (typeof initSiteMenu === "function") {
+            initSiteMenu();
+          }
 
-  <div class="site-footer__bottom container">
-    © 2024 thegroomer.ca. All rights reserved.
-  </div>
-</footer>
+          var currentPath = window.location.pathname.replace(/\/index\.html$/, "/").replace(/\/$/, "");
+          var navLinks = document.querySelectorAll(".site-nav a, .site-mobile-nav a");
+
+          navLinks.forEach(function (link) {
+            var linkPath = new URL(link.href, window.location.origin).pathname
+              .replace(/\/index\.html$/, "/")
+              .replace(/\/$/, "");
+
+            if (linkPath === currentPath) {
+              link.classList.add("is-active");
+            } else {
+              link.classList.remove("is-active");
+            }
+          });
+        })
+        .catch(function (error) {
+          console.error("Failed to load shared header/footer:", error);
+        });
+    });
+  </script>
+</body>
+</html>
