@@ -9,9 +9,9 @@
     content="Elevated dog grooming experiences through personalized, holistic care and artistry."
   />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/branding/favicon-32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/branding/favicon-16.png" />
-  <link rel="apple-touch-icon" href="/assets/img/branding/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/branding/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/branding/favicon-16.png" />
+  <link rel="apple-touch-icon" href="assets/img/branding/apple-touch-icon.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,7 +20,7 @@
     rel="stylesheet"
   />
 
-  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body class="has-fixed-header">
   <div id="site-header"></div>
@@ -40,8 +40,8 @@
           </p>
 
           <div class="hero-actions">
-            <a href="/pages/services.html" class="btn btn-primary">Our Services</a>
-            <a href="/pages/gallery.html" class="btn btn-secondary">View Gallery</a>
+            <a href="pages/services.html" class="btn btn-primary">Our Services</a>
+            <a href="pages/gallery.html" class="btn btn-secondary">View Gallery</a>
           </div>
         </div>
 
@@ -117,7 +117,7 @@
             <p>Hand-tailored services using premium organic ingredients and master-level artistry.</p>
           </div>
 
-          <a href="/pages/services.html" class="section-link">View Full Menu →</a>
+          <a href="pages/services.html" class="section-link">View Full Menu →</a>
         </div>
 
         <div class="services-grid">
@@ -260,14 +260,16 @@
 
   <div id="site-footer"></div>
 
-  <script src="/assets/js/main.js"></script>
+  <script src="assets/js/main.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       Promise.all([
-        fetch("/partials/header.html").then(function (res) {
+        fetch("partials/header.html").then(function (res) {
+          if (!res.ok) throw new Error("Header partial not found");
           return res.text();
         }),
-        fetch("/partials/footer.html").then(function (res) {
+        fetch("partials/footer.html").then(function (res) {
+          if (!res.ok) throw new Error("Footer partial not found");
           return res.text();
         })
       ])
@@ -279,12 +281,16 @@
             initSiteMenu();
           }
 
-          var currentPath = window.location.pathname.replace(/\/index\.html$/, "/").replace(/\/$/, "");
+          var currentPath = window.location.pathname
+            .replace(/index\.html$/, "")
+            .replace(/\/$/, "");
+
           var navLinks = document.querySelectorAll(".site-nav a, .site-mobile-nav a");
 
           navLinks.forEach(function (link) {
-            var linkPath = new URL(link.href, window.location.origin).pathname
-              .replace(/\/index\.html$/, "/")
+            var linkUrl = new URL(link.getAttribute("href"), window.location.href);
+            var linkPath = linkUrl.pathname
+              .replace(/index\.html$/, "")
               .replace(/\/$/, "");
 
             if (linkPath === currentPath) {
