@@ -1,22 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Page</title>
-<link rel="stylesheet" href="../assets/css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | thegroomer.ca</title>
+  <meta
+    name="description"
+    content="Privacy Policy for thegroomer.ca."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+
+  <style>
+    .privacy-page {
+      background: var(--surface);
+    }
+
+    .privacy-hero {
+      padding: 3rem 0 2rem;
+    }
+
+    .privacy-hero__inner {
+      max-width: 760px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .privacy-hero__badge {
+      display: inline-block;
+      padding: 0.45rem 0.9rem;
+      border-radius: var(--radius-full);
+      background: #d3e2ec;
+      color: #56656d;
+      margin-bottom: 1.5rem;
+    }
+
+    .privacy-hero__title {
+      margin-bottom: 1rem;
+      line-height: 0.96;
+    }
+
+    .privacy-hero__title em {
+      color: var(--primary);
+      font-style: italic;
+      font-weight: 700;
+    }
+
+    .privacy-hero__copy {
+      max-width: 42rem;
+      margin: 0 auto;
+      font-size: 1.05rem;
+      line-height: 1.75;
+    }
+
+    .privacy-content {
+      padding: 2rem 0 5rem;
+    }
+
+    .privacy-shell {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      gap: 2rem;
+    }
+
+    .privacy-card {
+      background: var(--surface-white);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      box-shadow: var(--shadow-soft);
+      display: grid;
+      gap: 0.85rem;
+    }
+
+    .privacy-card h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.15rem;
+    }
+
+    .privacy-card p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: var(--text-muted);
+    }
+
+    .privacy-list {
+      padding-left: 1.2rem;
+      color: var(--text-muted);
+    }
+
+    .privacy-list li + li {
+      margin-top: 0.45rem;
+    }
+
+    .privacy-callout {
+      background: var(--surface-low);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      text-align: center;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .privacy-callout p {
+      font-size: 0.98rem;
+      color: var(--text-soft);
+    }
+
+    @media (max-width: 768px) {
+      .privacy-hero {
+        padding-top: 2rem;
+      }
+
+      .privacy-card,
+      .privacy-callout {
+        padding: 1.5rem;
+      }
+
+      .privacy-shell {
+        gap: 1.5rem;
+      }
+    }
+  </style>
 </head>
-<body>
+<body class="has-fixed-header privacy-page">
+  <header class="site-header">
+    <div class="site-header__inner container">
+      <a href="../index.html" class="site-logo" aria-label="thegroomer.ca home">thegroomer.ca</a>
 
-<nav class="nav">
-  <div class="logo">thegroomer.ca</div>
-</nav>
+      <nav class="site-nav site-nav--desktop" aria-label="Primary navigation">
+        <a href="../index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
 
-<section class="content">
-  <h1>Page Title</h1>
-  <p>Content goes here.</p>
-</section>
+      <a href="contact.html" class="btn btn-primary site-header__cta">Book Consultation</a>
 
-<script src="../assets/js/main.js"></script>
+      <button
+        class="site-menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mobileMenu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="site-mobile-menu" id="mobileMenu">
+      <nav class="site-mobile-nav" aria-label="Mobile navigation">
+        <a href="../index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="mobile-menu-cta btn btn-primary">Book Consultation</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="privacy-hero">
+      <div class="container">
+        <div class="privacy-hero__inner">
+          <span class="small-label privacy-hero__badge">Privacy</span>
+          <h1 class="privacy-hero__title">Privacy <em>Policy</em></h1>
+          <p class="privacy-hero__copy">
+            We respect your privacy and only collect the information necessary to provide a smooth, professional, and high-quality grooming experience.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="privacy-content">
+      <div class="container">
+        <div class="privacy-shell">
+          <section class="privacy-card">
+            <h2>Information We Collect</h2>
+            <p>
+              We may collect information when you contact us, request services, or provide details about your pet.
+            </p>
+            <ul class="privacy-list">
+              <li>Your name and contact details</li>
+              <li>Your pet’s information</li>
+              <li>Messages, consultation notes, or booking details</li>
+            </ul>
+          </section>
+
+          <section class="privacy-card">
+            <h2>How We Use Information</h2>
+            <p>
+              Your information is used to communicate with you, manage appointments, maintain service records, and provide grooming services.
+            </p>
+            <p>
+              We do not sell your personal information.
+            </p>
+          </section>
+
+          <section class="privacy-card">
+            <h2>Third-Party Platforms</h2>
+            <p>
+              If you contact us through third-party platforms such as Instagram, those services may collect and process information under their own privacy policies.
+            </p>
+          </section>
+
+          <section class="privacy-card">
+            <h2>Retention</h2>
+            <p>
+              We retain information only as long as reasonably necessary for communication, appointment history, service records, and administrative purposes.
+            </p>
+          </section>
+
+          <section class="privacy-card">
+            <h2>Contact</h2>
+            <p>
+              If you have privacy-related questions or would like to request an update to your information, please contact us at
+              <a href="mailto:thegroomer.ca@gmail.com">thegroomer.ca@gmail.com</a>.
+            </p>
+          </section>
+
+          <div class="privacy-callout">
+            <p>
+              This policy may be updated periodically to reflect operational or legal changes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <div class="site-footer__brand">
+        <div class="site-footer__logo">thegroomer.ca</div>
+        <p>
+          Elevated dog grooming experiences through personalized, holistic care and artistry in the heart of Ontario.
+        </p>
+
+        <div class="site-footer__icons">
+          <a href="mailto:thegroomer.ca@gmail.com" aria-label="Email">
+            <span class="footer-dot"></span>
+          </a>
+          <a
+            href="https://www.instagram.com/thegroomer.ca/"
+            aria-label="Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="footer-dot"></span>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="site-footer__links">
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Connect</h4>
+        <ul class="site-footer__links">
+          <li>
+            <a
+              href="https://www.instagram.com/thegroomer.ca/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram
+            </a>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom container">
+      © 2024 thegroomer.ca. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
 </body>
 </html>
