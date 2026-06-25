@@ -23,7 +23,46 @@
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body class="has-fixed-header">
-  <div id="site-header"></div>
+  <header class="site-header">
+    <div class="site-header__inner container">
+      <a href="index.html" class="site-logo" aria-label="thegroomer.ca home">thegroomer.ca</a>
+
+      <nav class="site-nav site-nav--desktop" aria-label="Primary navigation">
+        <a href="index.html" class="is-active">Home</a>
+        <a href="pages/services.html">Services</a>
+        <a href="pages/gallery.html">Gallery</a>
+        <a href="pages/about.html">About</a>
+        <a href="pages/contact.html">Contact</a>
+      </nav>
+
+      <a href="pages/contact.html" class="btn btn-primary site-header__cta">Book Consultation</a>
+
+      <button
+        class="site-menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mobileMenu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="site-mobile-menu" id="mobileMenu">
+      <nav class="site-mobile-nav" aria-label="Mobile navigation">
+        <a href="index.html" class="is-active">Home</a>
+        <a href="pages/services.html">Services</a>
+        <a href="pages/gallery.html">Gallery</a>
+        <a href="pages/about.html">About</a>
+        <a href="pages/contact.html">Contact</a>
+        <a href="pages/terms.html">Terms</a>
+        <a href="pages/privacy.html">Privacy</a>
+        <a href="pages/contact.html" class="mobile-menu-cta btn btn-primary">Book Consultation</a>
+      </nav>
+    </div>
+  </header>
 
   <main>
     <section class="hero">
@@ -258,52 +297,57 @@
     </section>
   </main>
 
-  <div id="site-footer"></div>
+  <footer class="site-footer">
+    <div class="container site-footer__grid">
+      <div class="site-footer__brand">
+        <div class="site-footer__brand-lockup">
+          <a href="index.html" class="site-footer__logo-link" aria-label="thegroomer.ca home">
+            <img
+              src="assets/img/branding/logo-mark.png"
+              alt="thegroomer.ca"
+              class="site-footer__logo-mark"
+            />
+          </a>
+          <p>
+            Elevated dog grooming experiences through personalized, holistic care and artistry in the heart of Ontario.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="site-footer__links">
+          <li><a href="pages/services.html">Services</a></li>
+          <li><a href="pages/gallery.html">Gallery</a></li>
+          <li><a href="pages/terms.html">Terms of Service</a></li>
+          <li><a href="pages/privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Connect</h4>
+        <ul class="site-footer__links">
+          <li>
+            <a href="https://www.instagram.com/thegroomer.ca/" class="site-footer__social-link">
+              <img
+                src="assets/img/social/Instagram_logo_2016.svg"
+                alt=""
+                class="site-footer__social-icon"
+                aria-hidden="true"
+              />
+              Instagram
+            </a>
+          </li>
+          <li><a href="pages/contact.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom container">
+      © 2024 thegroomer.ca. All rights reserved.
+    </div>
+  </footer>
 
   <script src="assets/js/main.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      Promise.all([
-        fetch("partials/header.html").then(function (res) {
-          if (!res.ok) throw new Error("Header partial not found");
-          return res.text();
-        }),
-        fetch("partials/footer.html").then(function (res) {
-          if (!res.ok) throw new Error("Footer partial not found");
-          return res.text();
-        })
-      ])
-        .then(function (parts) {
-          document.getElementById("site-header").innerHTML = parts[0];
-          document.getElementById("site-footer").innerHTML = parts[1];
-
-          if (typeof initSiteMenu === "function") {
-            initSiteMenu();
-          }
-
-          var currentPath = window.location.pathname
-            .replace(/index\.html$/, "")
-            .replace(/\/$/, "");
-
-          var navLinks = document.querySelectorAll(".site-nav a, .site-mobile-nav a");
-
-          navLinks.forEach(function (link) {
-            var linkUrl = new URL(link.getAttribute("href"), window.location.href);
-            var linkPath = linkUrl.pathname
-              .replace(/index\.html$/, "")
-              .replace(/\/$/, "");
-
-            if (linkPath === currentPath) {
-              link.classList.add("is-active");
-            } else {
-              link.classList.remove("is-active");
-            }
-          });
-        })
-        .catch(function (error) {
-          console.error("Failed to load shared header/footer:", error);
-        });
-    });
-  </script>
 </body>
 </html>
