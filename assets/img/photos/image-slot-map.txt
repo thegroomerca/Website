@@ -1,0 +1,21 @@
+Image replacement slots
+=======================
+Replace the files in this folder with final photos using the exact same filenames and extensions.
+
+Gallery slots:
+- photo1.jpg through photo12.jpg are reserved for gallery photos.
+- Current visible gallery layout uses photo1.jpg through photo5.jpg.
+- photo6.jpg through photo12.jpg are included as reserved slots for the next gallery expansion.
+
+Labeled site images:
+- hero-front-page.jpg: front page hero image
+- hero-sunyoung.jpg: Sunyoung portrait / About page hero image
+- about-care.jpg: front page about collage image 1
+- about-studio.jpg: front page about collage image 2
+- about-tools.jpg: About page philosophy image 1
+- about-happy-dog.jpg: About page philosophy image 2
+- contact-studio.jpg: Contact page image
+- services-full-groom.jpg: Services page feature image
+- services-before-visit.jpg: Services page prep image
+- terms-customization.jpg: Terms page customization image
+- gallery-testimonial.jpg: Gallery testimonial avatar image
