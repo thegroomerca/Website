@@ -19,3 +19,10 @@
 - Replace placeholder images in `assets/img/photos/` with final client photos using the existing filenames.
 - Add consistent active-state handling for Terms and Privacy if those pages need primary nav highlighting.
 - Review external Unsplash references if any remain after final image replacement.
+
+
+Content update pass:
+- Updated homepage hero, philosophy, service cards, services page, contact/FAQ copy, footer brand copy, and contact details.
+- About page body copy intentionally left for a later pass, except shared footer content.
+- Gallery page intentionally left for a later pass, except shared footer content.
+- Terms/privacy updated only where the new contact and policy wording made existing text inconsistent.
