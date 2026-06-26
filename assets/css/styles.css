@@ -1073,3 +1073,31 @@ textarea:focus {
     height: 96px;
   }
 }
+
+
+/* =========================
+   PHOTO BACKGROUNDS
+   Soft tonal gradient behind transparent photo cutouts.
+========================= */
+img[src*="assets/img/photos/"] {
+  background:
+    radial-gradient(circle at 24% 18%, rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0) 34%),
+    linear-gradient(135deg, rgba(211, 226, 236, 0.86) 0%, rgba(246, 241, 233, 0.94) 58%, rgba(235, 241, 232, 0.9) 100%);
+}
+
+.hero-image-wrap,
+.gallery-item,
+.gallery-card,
+.package-feature__media,
+.prep-media__frame,
+.contact-info__image,
+.about-letter__image-wrap,
+.about-philosophy__media img,
+.gallery-testimonial__avatar,
+.terms-split__media,
+.about-hero__portrait,
+.terms-card__image {
+  background:
+    radial-gradient(circle at 25% 20%, rgba(255, 255, 255, 0.78), rgba(255, 255, 255, 0) 36%),
+    linear-gradient(135deg, rgba(211, 226, 236, 0.9), rgba(246, 241, 233, 0.96) 56%, rgba(235, 241, 232, 0.92));
+}

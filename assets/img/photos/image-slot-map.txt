@@ -20,3 +20,10 @@ gallery-testimonial.jpg = provisional testimonial avatar image, sourced from upl
 Optimization applied:
 All supplied photos were converted to progressive JPEG, resized to fit within 1200 x 1200 px, stripped of metadata, and saved at web-friendly quality.
 No layout, CSS, JavaScript, or wording changes were made in this pass.
+
+
+Transparent-background update:
+- Photo assets were converted from JPG to WEBP with alpha transparency.
+- The website now references .webp files for all images in assets/img/photos/.
+- Replace future photos using the same filename if you want the same slot to update.
+- WEBP was used because it supports transparency and is much smaller than PNG for these images.

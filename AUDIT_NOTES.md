@@ -34,3 +34,8 @@ Content update pass:
 - Images were optimized as progressive JPEGs at a maximum 1200px dimension.
 - Gallery markup was not expanded in this pass; only existing image slots and reserved filenames were populated.
 
+
+
+## Content update v2
+- About page, Terms of Service, and Contact FAQ wording updated from supplied copy.
+- Cancellation wording standardized to 48 hours where visible.
