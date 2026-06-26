@@ -493,10 +493,10 @@
       </div>
     </section>
 
-    <section class="gallery-testimonial">
+    <section class="gallery-testimonial" data-testimonial-slot="gallery-featured">
       <div class="container gallery-testimonial__inner">
         <div class="gallery-testimonial__quote-mark">“</div>
-        <blockquote>
+        <blockquote data-testimonial-field="quote">
           Sun takes her time to work individually with only one dog at a time. They leave feeling refreshed and cared for — and we leave knowing our most precious pups are in loving hands.
         </blockquote>
 
@@ -505,9 +505,10 @@
             class="gallery-testimonial__avatar"
             src="../assets/img/photos/gallery-testimonial.webp"
             alt="Portrait of a happy groomed dog"
+            data-testimonial-field="image"
           />
-          <div class="gallery-testimonial__name">Stephanie Bernardi</div>
-          <div class="gallery-testimonial__meta">Parent of Snickers &amp; Gizmo, Shih Tzu</div>
+          <div class="gallery-testimonial__name" data-testimonial-field="name">Stephanie Bernardi</div>
+          <div class="gallery-testimonial__meta" data-testimonial-field="meta">Parent of Snickers &amp; Gizmo, Shih Tzu</div>
         </div>
       </div>
     </section>
@@ -573,6 +574,8 @@
               Instagram
             </a>
           </li>
+          <li><a href="https://g.page/r/Cb6Rf2AkQloGEAE" target="_blank" rel="noopener">Google Maps</a></li>
+          <li><a href="https://g.page/r/Cb6Rf2AkQloGEAE/review" target="_blank" rel="noopener">Leave a Google Review</a></li>
           <li><a href="contact.html">FAQ</a></li>
         </ul>
       </div>
@@ -584,5 +587,7 @@
   </footer>
 
   <script src="../assets/js/main.js"></script>
+  <script src="../assets/data/testimonials.js?v=2"></script>
+  <script src="../assets/js/testimonials.js?v=2"></script>
 </body>
 </html>

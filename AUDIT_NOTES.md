@@ -39,3 +39,14 @@ Content update pass:
 ## Content update v2
 - About page, Terms of Service, and Contact FAQ wording updated from supplied copy.
 - Cancellation wording standardized to 48 hours where visible.
+
+## Google Links
+- Footer Google Maps link now uses the owner-provided Google short listing URL.
+- Footer review link now uses the owner-provided direct Google review URL.
+
+
+
+## Testimonials
+- Testimonials are stored in `assets/data/testimonials.json`.
+- The current database combines the client-supplied testimonial copy and complete Google review excerpts pasted by the site owner.
+- Truncated Google snippets ending in `View full review` were not added as full testimonials.

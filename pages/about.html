@@ -446,16 +446,18 @@
 </div>
 </div>
 </section>
-<section class="about-testimonials">
+<section class="about-testimonials" data-testimonial-slot="carousel">
 <div class="container">
 <div class="about-testimonials__head">
 <span class="small-label about-testimonials__label">Testimonials</span>
 <h2 class="about-testimonials__title">What Clients Say</h2>
 </div>
-<div class="about-testimonials__grid">
-<article class="about-testimonial">
+<div class="testimonial-carousel">
+<div class="testimonial-carousel__viewport" aria-label="Client testimonials">
+<div class="testimonial-carousel__track">
+<article class="about-testimonial testimonial-carousel__card">
 <p class="about-testimonial__quote">
-    "Sunyoung was calm, gentle, and incredibly patient — it was a completely stress-free experience. She even took the time to check her teeth, even though that's not a standard service. This was a 100% perfect experience."
+    "Sunyoung was calm, gentle, and incredibly patient — it was a completely stress-free experience."
   </p>
 <div class="about-testimonial__person">
 <span class="about-testimonial__initials">SL</span>
@@ -465,96 +467,70 @@
 </div>
 </div>
 </article>
-<article class="about-testimonial">
-<p class="about-testimonial__quote">
-    "After 14 years our groomer retired and after a few failed attempts we were lucky enough to find Sunyoung. She was patient and our dog had an excellent experience."
-  </p>
-<div class="about-testimonial__person">
-<span class="about-testimonial__initials">CB</span>
-<div>
-<div class="about-testimonial__name">Clayton Boxall</div>
-<div class="about-testimonial__meta">Parent of 15-year-old Tinsel, Shorkie</div>
 </div>
 </div>
-</article>
-<article class="about-testimonial">
-<p class="about-testimonial__quote">
-    "I honestly have never met such a wonderful caring person. My girls look and smell fantastic — they're actually acting like puppies again."
-  </p>
-<div class="about-testimonial__person">
-<span class="about-testimonial__initials">ST</span>
-<div>
-<div class="about-testimonial__name">SharonJulie Tarka Douthart</div>
-<div class="about-testimonial__meta">Parent of 13-year-old Maggie &amp; Mylee, dachshunds</div>
+<div class="testimonial-carousel__controls" aria-label="Testimonial carousel controls">
+<button class="testimonial-carousel__button" type="button" data-testimonial-action="prev" aria-label="Previous testimonials">‹</button>
+<button class="testimonial-carousel__button" type="button" data-testimonial-action="next" aria-label="Next testimonials">›</button>
 </div>
-</div>
-</article>
-<article class="about-testimonial">
-<p class="about-testimonial__quote">
-    "You can really tell how much she loves dogs. It's great to finally have found someone to take him to every time."
-  </p>
-<div class="about-testimonial__person">
-<span class="about-testimonial__initials">AW</span>
-<div>
-<div class="about-testimonial__name">Angela Wingenbach</div>
-<div class="about-testimonial__meta">Parent of one-year-old Schnitzel</div>
-</div>
-</div>
-</article>
-<article class="about-testimonial">
-<p class="about-testimonial__quote">
-    "Sun takes her time to work individually with only one dog at a time. They leave feeling refreshed and cared for — and we leave knowing our most precious pups are in loving hands."
-  </p>
-<div class="about-testimonial__person">
-<span class="about-testimonial__initials">SB</span>
-<div>
-<div class="about-testimonial__name">Stephanie Bernardi</div>
-<div class="about-testimonial__meta">Parent of Snickers &amp; Gizmo, Shih Tzu</div>
-</div>
-</div>
-</article>
 </div>
 </div>
 </section>
 </main>
 <footer class="site-footer">
-<div class="container site-footer__grid">
-<div class="site-footer__brand">
-<div class="site-footer__brand-lockup">
-<a aria-label="thegroomer.ca home" class="site-footer__logo-link" href="../index.html">
-<img alt="thegroomer.ca" class="site-footer__logo-mark" src="../assets/img/branding/logo-mark.png"/>
-</a>
-<p>
+    <div class="container site-footer__grid">
+      <div class="site-footer__brand">
+        <div class="site-footer__brand-lockup">
+          <a href="../index.html" class="site-footer__logo-link" aria-label="thegroomer.ca home">
+            <img
+              src="../assets/img/branding/logo-mark.png"
+              alt="thegroomer.ca"
+              class="site-footer__logo-mark"
+            />
+          </a>
+          <p>
             Personalized grooming built on trust, craft, and careful attention to every dog we work with.
           </p>
-</div>
-</div>
-<div>
-<h4>Quick Links</h4>
-<ul class="site-footer__links">
-<li><a href="services.html">Services</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-<li><a href="terms.html">Terms of Service</a></li>
-<li><a href="privacy.html">Privacy Policy</a></li>
-</ul>
-</div>
-<div>
-<h4>Connect</h4>
-<ul class="site-footer__links">
-<li>
-<a class="site-footer__social-link" href="https://www.instagram.com/thegroomer.ca/">
-<img alt="" aria-hidden="true" class="site-footer__social-icon" src="../assets/img/social/Instagram_logo_2016.svg"/>
+        </div>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="site-footer__links">
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Connect</h4>
+        <ul class="site-footer__links">
+          <li>
+            <a href="https://www.instagram.com/thegroomer.ca/" class="site-footer__social-link">
+              <img
+                src="../assets/img/social/Instagram_logo_2016.svg"
+                alt=""
+                class="site-footer__social-icon"
+                aria-hidden="true"
+              />
               Instagram
             </a>
-</li>
-<li><a href="contact.html">FAQ</a></li>
-</ul>
-</div>
-</div>
-<div class="site-footer__bottom container">
+          </li>
+          <li><a href="https://g.page/r/Cb6Rf2AkQloGEAE" target="_blank" rel="noopener">Google Maps</a></li>
+          <li><a href="https://g.page/r/Cb6Rf2AkQloGEAE/review" target="_blank" rel="noopener">Leave a Google Review</a></li>
+          <li><a href="contact.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom container">
       © 2024 thegroomer.ca. All rights reserved.
     </div>
-</footer>
+  </footer>
 <script src="../assets/js/main.js"></script>
+  <script src="../assets/data/testimonials.js?v=2"></script>
+  <script src="../assets/js/testimonials.js?v=2"></script>
 </body>
 </html>
