@@ -26,3 +26,11 @@ Content update pass:
 - About page body copy intentionally left for a later pass, except shared footer content.
 - Gallery page intentionally left for a later pass, except shared footer content.
 - Terms/privacy updated only where the new contact and policy wording made existing text inconsistent.
+
+## Photo distribution pass
+- Uploaded dog photos were distributed into the existing local image slots under `assets/img/photos/`.
+- `photo1.jpg` through `photo12.jpg` are reserved as stable sequential gallery filenames.
+- Named hero/section image files remain stable and can be replaced directly later.
+- Images were optimized as progressive JPEGs at a maximum 1200px dimension.
+- Gallery markup was not expanded in this pass; only existing image slots and reserved filenames were populated.
+

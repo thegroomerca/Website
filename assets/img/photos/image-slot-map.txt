@@ -1,21 +1,22 @@
-Image replacement slots
-=======================
-Replace the files in this folder with final photos using the exact same filenames and extensions.
+Image slot map — provisional placement
 
-Gallery slots:
-- photo1.jpg through photo12.jpg are reserved for gallery photos.
-- Current visible gallery layout uses photo1.jpg through photo5.jpg.
-- photo6.jpg through photo12.jpg are included as reserved slots for the next gallery expansion.
+Sequential gallery files:
+photo1.jpg through photo12.jpg are the 12 supplied gallery photos, optimized for web use.
+To update the gallery later, replace the files with the same names.
 
-Labeled site images:
-- hero-front-page.jpg: front page hero image
-- hero-sunyoung.jpg: Sunyoung portrait / About page hero image
-- about-care.jpg: front page about collage image 1
-- about-studio.jpg: front page about collage image 2
-- about-tools.jpg: About page philosophy image 1
-- about-happy-dog.jpg: About page philosophy image 2
-- contact-studio.jpg: Contact page image
-- services-full-groom.jpg: Services page feature image
-- services-before-visit.jpg: Services page prep image
-- terms-customization.jpg: Terms page customization image
-- gallery-testimonial.jpg: Gallery testimonial avatar image
+Named site images:
+hero-front-page.jpg = provisional homepage hero image, sourced from uploaded photo 1
+hero-sunyoung.jpg = provisional about/Sunyoung hero image, sourced from uploaded photo 11
+about-care.jpg = provisional about care image, sourced from uploaded photo 10
+about-studio.jpg = provisional about studio image, sourced from uploaded photo 7
+about-tools.jpg = provisional about tools/craft image, sourced from uploaded photo 4
+about-happy-dog.jpg = provisional happy dog image, sourced from uploaded photo 3
+contact-studio.jpg = provisional contact image, sourced from uploaded photo 11
+services-full-groom.jpg = provisional full groom image, sourced from uploaded photo 4
+services-before-visit.jpg = provisional before/visit image, sourced from uploaded photo 9
+terms-customization.jpg = provisional customization image, sourced from uploaded photo 8
+gallery-testimonial.jpg = provisional testimonial avatar image, sourced from uploaded photo 11
+
+Optimization applied:
+All supplied photos were converted to progressive JPEG, resized to fit within 1200 x 1200 px, stripped of metadata, and saved at web-friendly quality.
+No layout, CSS, JavaScript, or wording changes were made in this pass.
