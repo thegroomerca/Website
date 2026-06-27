@@ -3,11 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services | thegroomer.ca</title>
-  <meta
-    name="description"
-    content="Premium services tailored to your dog's coat, breed, and personality."
-  />
+  <title>Dog Grooming Services in Hamilton | thegroomer.ca</title>
+  <meta name="description" content="Explore full grooms, mini grooms, nail trims, and couture styling for small dogs in the Hamilton Region. One-on-one appointments with Sunyoung." />
+  <link rel="canonical" href="https://thegroomer.ca/pages/services.html" />
+  <meta property="og:site_name" content="thegroomer.ca" />
+  <meta property="og:title" content="Dog Grooming Services in Hamilton | thegroomer.ca" />
+  <meta property="og:description" content="Explore full grooms, mini grooms, nail trims, and couture styling for small dogs in the Hamilton Region. One-on-one appointments with Sunyoung." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://thegroomer.ca/pages/services.html" />
+  <meta property="og:image" content="https://thegroomer.ca/assets/img/photos/services-full-groom.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dog Grooming Services in Hamilton | thegroomer.ca" />
+  <meta name="twitter:description" content="Explore full grooms, mini grooms, nail trims, and couture styling for small dogs in the Hamilton Region. One-on-one appointments with Sunyoung." />
+  <meta name="twitter:image" content="https://thegroomer.ca/assets/img/photos/services-full-groom.webp" />
+  <script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebPage","name":"Dog Grooming Services in Hamilton | thegroomer.ca","url":"https://thegroomer.ca/pages/services.html","description":"Explore full grooms, mini grooms, nail trims, and couture styling for small dogs in the Hamilton Region. One-on-one appointments with Sunyoung.","isPartOf":{"@id":"https://thegroomer.ca/#website"}}]</script>
 
 
 
@@ -23,483 +32,7 @@
   />
 
   <link rel="stylesheet" href="../assets/css/styles.css" />
-
-  <style>
-    .services-page {
-      background: var(--surface);
-    }
-
-    .services-hero {
-      padding: 3rem 0 2rem;
-      background: var(--surface);
-    }
-
-    .services-hero__row {
-      display: flex;
-      justify-content: space-between;
-      align-items: end;
-      gap: 2rem;
-      flex-wrap: wrap;
-    }
-
-    .services-hero__label {
-      color: var(--primary);
-      margin-bottom: 1rem;
-    }
-
-    .services-hero__title {
-      max-width: 12ch;
-    }
-
-    .services-hero__title em {
-      color: var(--primary-soft);
-      font-style: italic;
-      font-weight: 700;
-    }
-
-    .services-hero__copy {
-      max-width: 22rem;
-      font-size: 1.05rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .packages-section {
-      padding: 2rem 0 5rem;
-    }
-
-    .packages-grid {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 3rem;
-      align-items: start;
-    }
-
-    .package-feature {
-      background: var(--surface-white);
-      border-radius: var(--radius-lg);
-      padding: 2rem;
-      box-shadow: 0 12px 40px rgba(60, 99, 123, 0.06);
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-    }
-
-    .package-feature__top {
-      display: flex;
-      justify-content: space-between;
-      align-items: start;
-      gap: 1rem;
-    }
-
-    .package-feature__title {
-      margin-bottom: 0.35rem;
-    }
-
-    .package-feature__meta {
-      font-family: var(--font-headline);
-      font-size: 0.68rem;
-      font-weight: 700;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--text-soft);
-    }
-
-    .package-feature__price-wrap {
-      text-align: right;
-      flex: 0 0 auto;
-    }
-
-    .package-feature__price-label {
-      display: block;
-      font-family: var(--font-headline);
-      font-size: 0.62rem;
-      font-weight: 700;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--text-soft);
-      margin-bottom: 0.3rem;
-    }
-
-    .package-feature__price {
-      font-family: var(--font-headline);
-      font-size: 2rem;
-      font-weight: 800;
-      color: var(--primary);
-      line-height: 1;
-    }
-
-    .package-feature__media {
-      position: relative;
-      overflow: hidden;
-      border-radius: 1.25rem;
-      height: 320px;
-      background: var(--surface-low);
-    }
-
-    .package-feature__media img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .package-feature__media::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to top, rgba(60, 99, 123, 0.16), rgba(60, 99, 123, 0));
-      pointer-events: none;
-    }
-
-    .package-feature__body {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-    }
-
-    .package-feature__copy p {
-      margin-bottom: 1.5rem;
-    }
-
-    .package-feature__list {
-      list-style: none;
-      display: grid;
-      gap: 0.85rem;
-    }
-
-    .package-feature__list li {
-      display: flex;
-      align-items: center;
-      gap: 0.7rem;
-      font-size: 0.95rem;
-      font-weight: 400;
-      color: var(--text-main);
-    }
-
-    .package-feature__list li::before {
-      content: "";
-      width: 0.65rem;
-      height: 0.65rem;
-      border-radius: 999px;
-      background: var(--primary-soft);
-      flex: 0 0 auto;
-    }
-
-    .package-stack {
-      display: grid;
-      gap: 2rem;
-    }
-
-    .package-card {
-      background: var(--surface-low);
-      border-radius: 1.25rem;
-      padding: 2rem;
-      transition: background 0.25s ease, transform 0.25s ease;
-    }
-
-    .package-card:hover {
-      background: var(--surface-mid);
-      transform: translateY(-3px);
-    }
-
-    .package-card__head {
-      display: flex;
-      justify-content: space-between;
-      align-items: start;
-      gap: 1rem;
-      margin-bottom: 1.25rem;
-    }
-
-    .package-card__price {
-      font-family: var(--font-headline);
-      font-size: 1.7rem;
-      font-weight: 800;
-      color: var(--primary);
-      line-height: 1;
-      flex: 0 0 auto;
-    }
-
-    .package-card__copy {
-      font-size: 0.95rem;
-      margin-bottom: 1.25rem;
-    }
-
-    .package-card__meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin-bottom: 1.25rem;
-      font-family: var(--font-headline);
-      font-size: 0.66rem;
-      font-weight: 700;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--text-soft);
-    }
-
-    .package-card__list {
-      list-style: none;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0.55rem 1rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .package-card__list li {
-      display: flex;
-      align-items: center;
-      gap: 0.55rem;
-      font-size: 0.82rem;
-      color: var(--text-main);
-    }
-
-    .package-card__list li::before {
-      content: "";
-      width: 0.35rem;
-      height: 0.35rem;
-      border-radius: 999px;
-      background: var(--primary);
-      flex: 0 0 auto;
-    }
-
-    .package-card__link {
-      text-decoration: none;
-      color: var(--primary);
-      font-family: var(--font-headline);
-      font-size: 0.85rem;
-      font-weight: 700;
-    }
-
-    .extras-section {
-      background: var(--surface-high);
-      padding: 5rem 0;
-    }
-
-    .extras-head {
-      margin-bottom: 2.5rem;
-    }
-
-    .extras-head h2 {
-      margin-bottom: 0.75rem;
-    }
-
-    .extras-head p {
-      max-width: 34rem;
-    }
-
-    .extras-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1.5rem;
-    }
-
-    .extra-card {
-      background: var(--surface-white);
-      padding: 1.75rem;
-      box-shadow: var(--shadow-soft);
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      min-height: 100%;
-    }
-
-    .extra-card--a {
-      border-radius: 3rem 1rem 1rem 3rem;
-    }
-
-    .extra-card--b {
-      border-radius: 1rem 3rem 3rem 1rem;
-    }
-
-    .extra-card__icon {
-      width: 3rem;
-      height: 3rem;
-      border-radius: 999px;
-      background: #e4edf3;
-      color: var(--primary);
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-family: var(--font-headline);
-      font-weight: 800;
-      font-size: 1rem;
-    }
-
-    .extra-card__price {
-      margin-top: auto;
-      font-family: var(--font-headline);
-      font-weight: 800;
-      color: var(--primary);
-    }
-
-    .prep-section {
-      padding: 5rem 0;
-    }
-
-    .prep-grid {
-      display: grid;
-      grid-template-columns: 0.95fr 1.05fr;
-      gap: 4rem;
-      align-items: center;
-    }
-
-    .prep-media {
-      position: relative;
-    }
-
-    .prep-media__glow {
-      position: absolute;
-      inset: -2rem;
-      background: rgba(127, 166, 193, 0.12);
-      border-radius: 999px;
-      filter: blur(42px);
-      z-index: 0;
-    }
-
-    .prep-media__frame {
-      position: relative;
-      z-index: 1;
-      background: var(--surface-white);
-      padding: 0.5rem;
-      border-radius: var(--radius-lg);
-      box-shadow: var(--shadow-soft);
-      transform: rotate(2deg);
-    }
-
-    .prep-media__frame img {
-      width: 100%;
-      border-radius: 1rem;
-      height: 460px;
-      object-fit: cover;
-    }
-
-    .prep-list {
-      display: grid;
-      gap: 2rem;
-    }
-
-    .prep-item {
-      display: grid;
-      grid-template-columns: 3rem 1fr;
-      gap: 1rem;
-      align-items: start;
-    }
-
-    .prep-item__num {
-      width: 3rem;
-      height: 3rem;
-      border-radius: 999px;
-      background: #d3e2ec;
-      color: var(--primary);
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-family: var(--font-headline);
-      font-weight: 800;
-    }
-
-    .prep-item h3 {
-      margin-bottom: 0.35rem;
-      font-size: 1.2rem;
-    }
-
-    .services-cta {
-      padding: 1rem 0 0;
-    }
-
-    .services-cta__card {
-      position: relative;
-      overflow: hidden;
-      background: var(--primary);
-      border-radius: var(--radius-lg);
-      padding: 4rem 2rem;
-      text-align: center;
-      color: #fff;
-    }
-
-    .services-cta__glow {
-      position: absolute;
-      top: -4rem;
-      right: -4rem;
-      width: 16rem;
-      height: 16rem;
-      border-radius: 999px;
-      background: rgba(127, 166, 193, 0.18);
-      filter: blur(40px);
-      pointer-events: none;
-    }
-
-    .services-cta__title {
-      position: relative;
-      z-index: 1;
-      color: #fff;
-      margin-bottom: 1rem;
-    }
-
-    .services-cta__copy {
-      position: relative;
-      z-index: 1;
-      max-width: 36rem;
-      margin: 0 auto 2rem;
-      color: rgba(255, 255, 255, 0.82);
-      font-size: 1.05rem;
-    }
-
-    .services-cta__actions {
-      position: relative;
-      z-index: 1;
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    .btn-light {
-      background: #fff;
-      color: var(--primary);
-      box-shadow: var(--shadow-soft);
-    }
-
-    .btn-outline-light {
-      background: transparent;
-      color: #fff;
-      border: 1px solid rgba(255,255,255,0.28);
-    }
-
-    @media (max-width: 1100px) {
-      .packages-grid,
-      .prep-grid,
-      .extras-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .services-hero {
-        padding-top: 2rem;
-      }
-
-      .package-feature__body {
-        grid-template-columns: 1fr;
-      }
-
-      .package-card__list {
-        grid-template-columns: 1fr;
-      }
-
-      .prep-media__frame img {
-        height: 340px;
-      }
-
-      .services-cta__actions {
-        flex-direction: column;
-        align-items: stretch;
-      }
-
-      .services-cta__actions .btn {
-        width: 100%;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="../assets/css/page-styles.css" />
 </head>
 <body class="has-fixed-header services-page">
   <header class="site-header">
@@ -547,7 +80,7 @@
     <section class="services-hero">
       <div class="container services-hero__row">
         <div>
-          <span class="small-label services-hero__label">Our Services</span>
+          <span class="small-label services-hero__label">Services</span>
           <h1 class="services-hero__title">Curated <em>Approach.</em></h1>
         </div>
 
@@ -559,11 +92,11 @@
 
     <section class="packages-section">
       <div class="container packages-grid">
-        <article class="package-feature">
+        <article class="package-feature" id="full-groom">
           <div class="package-feature__top">
             <div>
               <h2 class="package-feature__title">Full Groom</h2>
-              <div class="package-feature__meta">2.5–4 hrs</div>
+              <div class="package-feature__meta">2–3 hrs</div>
             </div>
 
             <div class="package-feature__price-wrap">
@@ -573,7 +106,7 @@
           </div>
 
           <div class="package-feature__media">
-            <img
+            <img loading="lazy" decoding="async" width="1200" height="960"
               src="../assets/img/photos/services-full-groom.webp"
               alt="Professional groomer hand-scissoring a fluffy white dog"
             />
@@ -582,7 +115,7 @@
           <div class="package-feature__body">
             <div class="package-feature__copy">
               <p>
-                Our head-to-tail signature experience—whether you're maintaining a breed-standard cut or going for something more custom.
+                My head-to-tail signature experience—whether you're maintaining a breed-standard cut or going for something more custom.
               </p>
 
               <a href="contact.html" class="btn btn-primary">Book Package</a>
@@ -599,7 +132,7 @@
         </article>
 
         <div class="package-stack">
-          <article class="package-card">
+          <article class="package-card" id="mini-groom">
             <div class="package-card__head">
               <div>
                 <h3>Mini Groom</h3>
@@ -645,7 +178,7 @@
 
             <ul class="package-card__list">
               <li>Nail Trim · $10–$20</li>
-              <li>Couture Styling · Pricing by consultation</li>
+              <li>Couture Styling · Pricing varies; please call for a consultation.</li>
             </ul>
 
             <a href="contact.html" class="package-card__link">Discuss Extras →</a>
@@ -674,8 +207,8 @@
           <article class="extra-card extra-card--b">
             <div class="extra-card__icon">≈</div>
             <h3>Couture Styling</h3>
-            <p>Specialized cuts and semi-permanent, pet-safe colour for dogs who like to make a statement. Text or call me to discuss your vision.</p>
-            <div class="extra-card__price">Consultation</div>
+            <p>Specialized cuts and semi-permanent, pet-safe colour for dogs who like to make a statement. Pricing varies; please call for a consultation.</p>
+            <div class="extra-card__price">Pricing varies</div>
           </article>
         </div>
       </div>
@@ -686,7 +219,7 @@
         <div class="prep-media">
           <div class="prep-media__glow" aria-hidden="true"></div>
           <div class="prep-media__frame">
-            <img
+            <img loading="lazy" decoding="async" width="1200" height="960"
               src="../assets/img/photos/services-before-visit.webp"
               alt="Calm dog in a bright modern grooming salon"
             />
@@ -694,7 +227,7 @@
         </div>
 
         <div>
-          <h2 style="margin-bottom: 2rem;">Before Your Visit</h2>
+          <h2 class="prep-title">Before Your Visit</h2>
 
           <div class="prep-list">
             <div class="prep-item">
@@ -712,7 +245,7 @@
               <div>
                 <h3>Arrival Times</h3>
                 <p>
-                  Please arrive a little early so we can review styling and care details before the appointment begins.
+                  Please arrive a little early so I can review styling and care details before the appointment begins.
                 </p>
               </div>
             </div>
@@ -755,14 +288,14 @@
       <div class="site-footer__brand">
         <div class="site-footer__brand-lockup">
           <a href="../index.html" class="site-footer__logo-link" aria-label="thegroomer.ca home">
-            <img
+            <img loading="lazy" decoding="async" width="512" height="512"
               src="../assets/img/branding/logo-mark.png"
               alt="thegroomer.ca"
               class="site-footer__logo-mark"
             />
           </a>
           <p>
-            Personalized grooming built on trust, craft, and careful attention to every dog we work with.
+            Personalized grooming built on trust, craft, and careful attention to every dog I work with.
           </p>
         </div>
       </div>
@@ -782,7 +315,7 @@
         <ul class="site-footer__links">
           <li>
             <a href="https://www.instagram.com/thegroomer.ca/" class="site-footer__social-link">
-              <img
+              <img loading="lazy" decoding="async" width="132" height="132"
                 src="../assets/img/social/Instagram_logo_2016.svg"
                 alt=""
                 class="site-footer__social-icon"

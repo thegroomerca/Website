@@ -569,6 +569,16 @@ p {
   gap: 2rem;
 }
 
+.service-card-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.service-card-link:focus-visible {
+  outline: 3px solid rgba(60, 99, 123, 0.35);
+  outline-offset: 4px;
+}
+
 .service-card {
   min-height: 320px;
   display: flex;

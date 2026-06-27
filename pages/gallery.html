@@ -3,11 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gallery | thegroomer.ca</title>
-  <meta
-    name="description"
-    content="A showcase of finished grooms, puppy introductions, spa extras, and signature grooming artistry at thegroomer.ca."
-  />
+  <title>Dog Grooming Gallery in Hamilton | thegroomer.ca</title>
+  <meta name="description" content="View finished grooms, puppy introductions, spa extras, and small dog grooming transformations from thegroomer.ca in the Hamilton Region." />
+  <link rel="canonical" href="https://thegroomer.ca/pages/gallery.html" />
+  <meta property="og:site_name" content="thegroomer.ca" />
+  <meta property="og:title" content="Dog Grooming Gallery in Hamilton | thegroomer.ca" />
+  <meta property="og:description" content="View finished grooms, puppy introductions, spa extras, and small dog grooming transformations from thegroomer.ca in the Hamilton Region." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://thegroomer.ca/pages/gallery.html" />
+  <meta property="og:image" content="https://thegroomer.ca/assets/img/photos/photo1.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dog Grooming Gallery in Hamilton | thegroomer.ca" />
+  <meta name="twitter:description" content="View finished grooms, puppy introductions, spa extras, and small dog grooming transformations from thegroomer.ca in the Hamilton Region." />
+  <meta name="twitter:image" content="https://thegroomer.ca/assets/img/photos/photo1.webp" />
+  <script type="application/ld+json">[{"@context":"https://schema.org","@type":"WebPage","name":"Dog Grooming Gallery in Hamilton | thegroomer.ca","url":"https://thegroomer.ca/pages/gallery.html","description":"View finished grooms, puppy introductions, spa extras, and small dog grooming transformations from thegroomer.ca in the Hamilton Region.","isPartOf":{"@id":"https://thegroomer.ca/#website"}}]</script>
 
 
 
@@ -23,338 +32,7 @@
   />
 
   <link rel="stylesheet" href="../assets/css/styles.css" />
-
-  <style>
-    .gallery-page {
-      background: var(--surface);
-    }
-
-    .gallery-hero {
-      padding: 3rem 0 1.5rem;
-      background: var(--surface);
-    }
-
-    .gallery-hero__badge {
-      display: inline-block;
-      padding: 0.45rem 0.9rem;
-      border-radius: var(--radius-full);
-      background: #d3e2ec;
-      color: #56656d;
-      margin-bottom: 1.5rem;
-    }
-
-    .gallery-hero__title {
-      max-width: 14ch;
-      margin-bottom: 1.5rem;
-    }
-
-    .gallery-hero__copy {
-      max-width: 42rem;
-      font-size: 1.1rem;
-    }
-
-    .gallery-filters {
-      padding: 1rem 0 2rem;
-    }
-
-    .gallery-filters__row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-    }
-
-    .gallery-filters__pill {
-      border: 0;
-      border-radius: var(--radius-full);
-      padding: 0.85rem 1.25rem;
-      background: var(--surface-high);
-      color: var(--text-muted);
-      font-family: var(--font-headline);
-      font-size: 0.8rem;
-      font-weight: 700;
-      text-decoration: none;
-      transition: transform 0.25s ease, background 0.25s ease;
-    }
-
-    .gallery-filters__pill:hover {
-      transform: scale(1.03);
-    }
-
-    .gallery-filters__pill.is-active {
-      background: linear-gradient(135deg, var(--primary), var(--primary-soft));
-      color: #fff;
-      box-shadow: var(--shadow-soft);
-    }
-
-    .gallery-showcase {
-      padding: 1rem 0 2rem;
-    }
-
-    .gallery-showcase__grid {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 2rem;
-      align-items: start;
-    }
-
-    .gallery-showcase__column {
-      display: grid;
-      gap: 2rem;
-    }
-
-    .gallery-showcase__column--offset {
-      padding-top: 5rem;
-    }
-
-    .gallery-card {
-      position: relative;
-      overflow: hidden;
-      background: var(--surface-low);
-      box-shadow: var(--shadow-soft);
-      transition: transform 0.4s ease;
-    }
-
-    .gallery-card:hover {
-      transform: translateY(-6px);
-    }
-
-    .gallery-card img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.7s ease;
-    }
-
-    .gallery-card:hover img {
-      transform: scale(1.08);
-    }
-
-    .gallery-card--shape-a {
-      border-radius: 3rem 1rem 1rem 3rem;
-    }
-
-    .gallery-card--shape-b {
-      border-radius: 1rem 3rem 3rem 1rem;
-    }
-
-    .gallery-card--shape-c {
-      border-radius: 2rem 2rem 1rem 1rem;
-    }
-
-    .gallery-card--plain {
-      border-radius: 1rem;
-    }
-
-    .gallery-card--tall {
-      aspect-ratio: 4 / 5;
-    }
-
-    .gallery-card--square {
-      aspect-ratio: 1 / 1;
-    }
-
-    .gallery-card--portrait {
-      aspect-ratio: 3 / 4;
-    }
-
-    .gallery-card__overlay {
-      position: absolute;
-      inset: 0;
-      display: flex;
-      align-items: end;
-      padding: 2rem;
-      background: linear-gradient(to top, rgba(0,0,0,0.58), rgba(0,0,0,0.08) 46%, rgba(0,0,0,0));
-      color: #fff;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-
-    .gallery-card:hover .gallery-card__overlay {
-      opacity: 1;
-    }
-
-    .gallery-card__eyebrow {
-      display: block;
-      margin-bottom: 0.35rem;
-      font-family: var(--font-headline);
-      font-size: 0.68rem;
-      font-weight: 700;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: rgba(255,255,255,0.88);
-    }
-
-    .gallery-card__title {
-      font-size: 1.5rem;
-      color: #fff;
-      line-height: 1.05;
-    }
-
-    .gallery-testimonial {
-      margin-top: 5rem;
-      background: var(--surface-low);
-      border-top-left-radius: 5rem;
-      border-top-right-radius: 5rem;
-      padding: 5rem 0;
-    }
-
-    .gallery-testimonial__inner {
-      max-width: 900px;
-      text-align: center;
-    }
-
-    .gallery-testimonial__quote-mark {
-      font-family: var(--font-headline);
-      font-size: 4.5rem;
-      line-height: 1;
-      color: var(--primary-soft);
-      margin-bottom: 1rem;
-    }
-
-    .gallery-testimonial blockquote {
-      font-family: var(--font-headline);
-      font-size: clamp(2rem, 4vw, 3.25rem);
-      line-height: 1.15;
-      font-style: italic;
-      color: var(--text-muted);
-    }
-
-    .gallery-testimonial__person {
-      margin-top: 2rem;
-      display: grid;
-      justify-items: center;
-      gap: 0.75rem;
-    }
-
-    .gallery-testimonial__avatar {
-      width: 78px;
-      height: 78px;
-      border-radius: 999px;
-      object-fit: cover;
-      box-shadow: var(--shadow-soft);
-    }
-
-    .gallery-testimonial__name {
-      font-family: var(--font-headline);
-      font-size: 1rem;
-      font-weight: 800;
-      color: var(--text-main);
-    }
-
-    .gallery-testimonial__meta {
-      font-family: var(--font-headline);
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--primary);
-    }
-
-    .gallery-cta {
-      padding: 5rem 0 1rem;
-    }
-
-    .gallery-cta__card {
-      position: relative;
-      overflow: hidden;
-      background: var(--surface-white);
-      box-shadow: var(--shadow-soft);
-      border-radius: var(--radius-lg);
-      padding: 4rem 2rem;
-      text-align: center;
-    }
-
-    .gallery-cta__glow-a,
-    .gallery-cta__glow-b {
-      position: absolute;
-      width: 260px;
-      height: 260px;
-      border-radius: 999px;
-      filter: blur(42px);
-      opacity: 0.65;
-      pointer-events: none;
-    }
-
-    .gallery-cta__glow-a {
-      top: -70px;
-      right: -70px;
-      background: rgba(127, 166, 193, 0.18);
-    }
-
-    .gallery-cta__glow-b {
-      bottom: -70px;
-      left: -70px;
-      background: rgba(155, 165, 142, 0.18);
-    }
-
-    .gallery-cta__title {
-      position: relative;
-      z-index: 1;
-      margin-bottom: 1rem;
-    }
-
-    .gallery-cta__copy {
-      position: relative;
-      z-index: 1;
-      max-width: 42rem;
-      margin: 0 auto 2rem;
-      font-size: 1.05rem;
-    }
-
-    .gallery-cta__actions {
-      position: relative;
-      z-index: 1;
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    @media (max-width: 1100px) {
-      .gallery-showcase__grid {
-        grid-template-columns: 1fr;
-      }
-
-      .gallery-showcase__column--offset {
-        padding-top: 0;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .gallery-hero {
-        padding-top: 2rem;
-      }
-
-      .gallery-showcase,
-      .gallery-cta {
-        padding-top: 3rem;
-      }
-
-      .gallery-card__overlay {
-        opacity: 1;
-        padding: 1.5rem;
-      }
-
-      .gallery-testimonial {
-        border-top-left-radius: 2.5rem;
-        border-top-right-radius: 2.5rem;
-        padding: 4rem 0;
-      }
-
-      .gallery-cta__card {
-        padding: 3rem 1.25rem;
-      }
-
-      .gallery-cta__actions {
-        flex-direction: column;
-        align-items: stretch;
-      }
-
-      .gallery-cta__actions .btn {
-        width: 100%;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="../assets/css/page-styles.css" />
 </head>
 <body class="has-fixed-header gallery-page">
   <header class="site-header">
@@ -402,7 +80,7 @@
     <section class="gallery-hero">
       <div class="container">
         <span class="small-label gallery-hero__badge">Portfolio Showcase</span>
-        <h1 class="gallery-hero__title">A showcase of our happy artisans.</h1>
+        <h1 class="gallery-hero__title">A showcase of happy artisans.</h1>
         <p class="gallery-hero__copy">
           Every dog is an individual canvas, and every groom is a personal masterpiece. Explore a collection of transformed companions, where craft meets compassion.
         </p>
@@ -424,7 +102,7 @@
       <div class="container gallery-showcase__grid">
         <div class="gallery-showcase__column">
           <article class="gallery-card gallery-card--shape-a gallery-card--tall" id="full-grooms">
-            <img
+            <img loading="lazy" decoding="async" width="1200" height="960"
               src="../assets/img/photos/photo1.webp"
               alt="Elegant long-haired dog after a full groom"
             />
@@ -437,7 +115,7 @@
           </article>
 
           <article class="gallery-card gallery-card--shape-b gallery-card--square">
-            <img
+            <img loading="lazy" decoding="async" width="1200" height="960"
               src="../assets/img/photos/photo2.webp"
               alt="Golden retriever with neat polished finish after grooming"
             />
@@ -452,7 +130,7 @@
 
         <div class="gallery-showcase__column gallery-showcase__column--offset">
           <article class="gallery-card gallery-card--shape-c gallery-card--square" id="puppy-first">
-            <img
+            <img loading="lazy" decoding="async" width="1200" height="960"
               src="../assets/img/photos/photo3.webp"
               alt="Small white terrier with rounded face groom"
             />
@@ -465,7 +143,7 @@
           </article>
 
           <article class="gallery-card gallery-card--plain gallery-card--portrait">
-            <img
+            <img loading="lazy" decoding="async" width="1200" height="960"
               src="../assets/img/photos/photo4.webp"
               alt="Poodle with carefully sculpted groom"
             />
@@ -478,7 +156,7 @@
           </article>
 
           <article class="gallery-card gallery-card--shape-a gallery-card--square" id="spa-extras">
-            <img
+            <img loading="lazy" decoding="async" width="1200" height="960"
               src="../assets/img/photos/photo5.webp"
               alt="Fluffy freshly groomed dog resting softly"
             />
@@ -501,7 +179,7 @@
         </blockquote>
 
         <div class="gallery-testimonial__person">
-          <img
+          <img loading="lazy" decoding="async" width="1200" height="960"
             class="gallery-testimonial__avatar"
             src="../assets/img/photos/gallery-testimonial.webp"
             alt="Portrait of a happy groomed dog"
@@ -521,12 +199,12 @@
 
           <h2 class="gallery-cta__title">Ready for your pet’s masterpiece?</h2>
           <p class="gallery-cta__copy">
-            Book an initial consultation and let us create a tailored grooming experience that celebrates your companion’s unique spirit.
+            Book an initial consultation and let me create a tailored grooming experience that celebrates your companion’s unique spirit.
           </p>
 
           <div class="gallery-cta__actions">
             <a href="contact.html" class="btn btn-primary">Book a Consultation</a>
-            <a href="services.html" class="btn btn-secondary">View Our Services</a>
+            <a href="services.html" class="btn btn-secondary">View Services</a>
           </div>
         </div>
       </div>
@@ -538,14 +216,14 @@
       <div class="site-footer__brand">
         <div class="site-footer__brand-lockup">
           <a href="../index.html" class="site-footer__logo-link" aria-label="thegroomer.ca home">
-            <img
+            <img loading="lazy" decoding="async" width="512" height="512"
               src="../assets/img/branding/logo-mark.png"
               alt="thegroomer.ca"
               class="site-footer__logo-mark"
             />
           </a>
           <p>
-            Personalized grooming built on trust, craft, and careful attention to every dog we work with.
+            Personalized grooming built on trust, craft, and careful attention to every dog I work with.
           </p>
         </div>
       </div>
@@ -565,7 +243,7 @@
         <ul class="site-footer__links">
           <li>
             <a href="https://www.instagram.com/thegroomer.ca/" class="site-footer__social-link">
-              <img
+              <img loading="lazy" decoding="async" width="132" height="132"
                 src="../assets/img/social/Instagram_logo_2016.svg"
                 alt=""
                 class="site-footer__social-icon"
