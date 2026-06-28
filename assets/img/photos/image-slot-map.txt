@@ -1,29 +1,34 @@
-Image slot map — provisional placement
+Image slot map - production photo bundle
+
+Source bundle:
+C:/Users/er1c_/Downloads/thegroomer-photo-bundle.zip
+
+Static website images:
+hero-front-page.webp = static-home-hero.webp
+about-care.webp = static-home-philosophy-care.webp
+about-studio.webp = static-home-philosophy-studio.webp
+hero-sunyoung.webp = static-about-sunyoung-portrait.webp
+about-tools.webp = static-about-tools-craft.webp
+about-happy-dog.webp = static-about-happy-dog.webp
+contact-studio.webp = static-contact-studio.webp
+services-full-groom.webp = static-services-full-groom.webp
+services-before-visit.webp = static-services-before-visit.webp
+terms-customization.webp = static-terms-customization.webp
+gallery-testimonial.webp = static-gallery-testimonial-fallback.webp
 
 Sequential gallery files:
-photo1.jpg through photo12.jpg are the 12 supplied gallery photos, optimized for web use.
-To update the gallery later, replace the files with the same names.
+photo1.webp = gallery-aro-royal-treatment.webp
+photo2.webp = gallery-bobby-golden-hour-glow.webp
+photo3.webp = gallery-dog-name-snowball-chic.webp
+photo4.webp = gallery-stormii-sculpted-silhouette.webp
+photo5.webp = gallery-miki-cloud-softness.webp
+photo6.webp = gallery-hershey-reserve-06.webp
+photo7.webp = gallery-dog-name-reserve-07.webp
+photo8.webp = gallery-aro-reserve-08.webp
+photo9.webp = gallery-sophie-reserve-09.webp
+photo10.webp = gallery-hershey-reserve-10.webp
+photo11.webp = gallery-ella-reserve-11.webp
+photo12.webp = gallery-daisy-reserve-12.webp
 
-Named site images:
-hero-front-page.jpg = provisional homepage hero image, sourced from uploaded photo 1
-hero-sunyoung.jpg = provisional about/Sunyoung hero image, sourced from uploaded photo 11
-about-care.jpg = provisional about care image, sourced from uploaded photo 10
-about-studio.jpg = provisional about studio image, sourced from uploaded photo 7
-about-tools.jpg = provisional about tools/craft image, sourced from uploaded photo 4
-about-happy-dog.jpg = provisional happy dog image, sourced from uploaded photo 3
-contact-studio.jpg = provisional contact image, sourced from uploaded photo 11
-services-full-groom.jpg = provisional full groom image, sourced from uploaded photo 4
-services-before-visit.jpg = provisional before/visit image, sourced from uploaded photo 9
-terms-customization.jpg = provisional customization image, sourced from uploaded photo 8
-gallery-testimonial.jpg = provisional testimonial avatar image, sourced from uploaded photo 11
-
-Optimization applied:
-All supplied photos were converted to progressive JPEG, resized to fit within 1200 x 1200 px, stripped of metadata, and saved at web-friendly quality.
-No layout, CSS, JavaScript, or wording changes were made in this pass.
-
-
-Transparent-background update:
-- Photo assets were converted from JPG to WEBP with alpha transparency.
-- The website now references .webp files for all images in assets/img/photos/.
-- Replace future photos using the same filename if you want the same slot to update.
-- WEBP was used because it supports transparency and is much smaller than PNG for these images.
+Testimonial images:
+Matched review photos live in assets/img/photos/testimonials/ and are linked from assets/data/testimonials.json and assets/data/testimonials.js.

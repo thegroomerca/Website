@@ -3,14 +3,16 @@
     "id": "khy",
     "name": "Khy",
     "initials": "K",
-    "meta": "Google review · 2 weeks ago",
+    "meta": "Parent of Leo, Pomeranian",
     "quote": "Sunyoung was wonderful with my beloved Pomeranian Leo. The care and entire grooming experience was greatly appreciated, and we will definitely be back.",
     "shortQuote": "Sunyoung was wonderful with my beloved Pomeranian Leo. The care and entire grooming experience was greatly appreciated, and we will definitely…",
     "fullQuote": "Sunyoung was wonderful with my beloved Pomeranian Leo 🦁 The care and entire grooming experience was greatly appreciated and we will definitely be back for Leo’s future grooming & elevated spa experiences. 🤍✨",
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/testimonials/testimonial-leo-pomeranian-khy.webp",
+    "dogName": "Leo",
+    "dogBreed": "Pomeranian"
   },
   {
     "id": "y",
@@ -42,40 +44,45 @@
     "id": "heidi-d",
     "name": "Heidi D.",
     "initials": "HD",
-    "meta": "Google review · 5 weeks ago",
+    "meta": "Parent of Teddy",
     "quote": "Great haircut again. Teddy looks great.",
     "shortQuote": "Great haircut again. Teddy looks great.",
     "fullQuote": "As the last two times: great hair cut! Teddy looks great.",
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/testimonials/testimonial-teddy-heidi-d.webp",
+    "dogName": "Teddy"
   },
   {
     "id": "anna-de-benedictis",
     "name": "Anna De Benedictis",
     "initials": "AD",
-    "meta": "Google review · 5 weeks ago",
+    "meta": "Parent of Mac, Cavapoo",
     "quote": "We loved everything about the experience. Mac looked so clean, fluffy, and perfectly groomed.",
     "shortQuote": "We loved everything about the experience. Mac looked so clean, fluffy, and perfectly groomed.",
     "fullQuote": "It was the first time we brought our Cavapoo for grooming with Sunyoung. We just loved everything about the experience! He looks like a little stuffed toy.. so clean, fluffy and perfectly groomed. I would highly recommend her. Sunyoung is professional and caring. We get stopped on the street.. well actually Mac does! 🐶",
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/gallery-testimonial.webp",
+    "dogName": "Mac",
+    "dogBreed": "Cavapoo"
   },
   {
     "id": "shelley",
     "name": "Shelley",
     "initials": "S",
-    "meta": "Google review · 8 weeks ago",
+    "meta": "Parent of Sadie, Chihuahua",
     "quote": "This lady is amazing. The first time I brought my Chihuahua Sadie to her, she did the best cleaning ever.",
     "shortQuote": "This lady is amazing. The first time I brought my Chihuahua Sadie to her, she did the best cleaning ever.",
     "fullQuote": "This lady is amazing my first time I brought my chihuahua Sadie to her. She did the best cleaning ever so happy 😊",
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/gallery-testimonial.webp",
+    "dogName": "Sadie",
+    "dogBreed": "Chihuahua"
   },
   {
     "id": "chantel-hollingsworth",
@@ -101,7 +108,7 @@
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/testimonials/testimonial-unknown-dog-sakina-seva.webp"
   },
   {
     "id": "lebene-numekevor",
@@ -120,27 +127,30 @@
     "id": "sharonjulie-tarka-douthart",
     "name": "SharonJulie Tarka Douthart",
     "initials": "ST",
-    "meta": "Google review · 11 weeks ago",
+    "meta": "Parent of Maggie and Mylee, Dachshunds",
     "quote": "My girls look and smell fantastic. They are actually acting like puppies again.",
     "shortQuote": "My girls look and smell fantastic. They are actually acting like puppies again.",
     "fullQuote": "I did a Google search to find a groomer close to my home for my two 13 year old dachshunds. I have one word WOW what a great find. I honestly have never met such a wonderful caring person Sunyoung who offered such amazing service. My girls look and smell fantastic. They are actually acting like puppies again. I have never been so happy to find the most caring, calm, perfect person for our girls 😊. THANK YOU SUNYOUNG for your amazing service. If im not mistaken I think Maggie and Mylee would have stayed with you 😉",
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/testimonials/testimonial-maggie-and-mylee-sharonjulie-tarka-douthart.webp",
+    "dogName": "Maggie and Mylee",
+    "dogBreed": "Dachshunds"
   },
   {
     "id": "vanessa",
     "name": "Vanessa",
     "initials": "V",
-    "meta": "Google review · 11 weeks ago",
+    "meta": "Poodle client",
     "quote": "Sunyoung was amazing and very professional. Our poodle dog was very matted and she really took her time and he came out looking absolutely fabulous.",
     "shortQuote": "Sunyoung was amazing and very professional. Our poodle dog was very matted and she really took her time and he came out looking absolutely fabulous.",
     "fullQuote": "Sunyoung was amazing and very professional. Our poodle dog was very matted and she really took her time and he came out looking absolutely fabulous. I’m impressed and highly recommend her.",
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/gallery-testimonial.webp",
+    "dogBreed": "Poodle"
   },
   {
     "id": "adrian-campopiano",
@@ -159,14 +169,15 @@
     "id": "chris-pagliari",
     "name": "Chris Pagliari",
     "initials": "CP",
-    "meta": "Google review · 12 weeks ago",
+    "meta": "Doodle client",
     "quote": "Sunyoung was amazing. This was our first visit after a few bad experiences with other groomers, and she was very knowledgeable with doodles.",
     "shortQuote": "Sunyoung was amazing. This was our first visit after a few bad experiences with other groomers, and she was very knowledgeable with doodles.",
     "fullQuote": "Sunyoung was amazing. Our first time bringing our dog to her after a few bad experiences with other groomers. She very knowledgeable with doodles. Thanks again",
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/testimonials/testimonial-unknown-dog-chris-pagliari.webp",
+    "dogBreed": "Doodle"
   },
   {
     "id": "tracy-sauder",
@@ -185,92 +196,101 @@
     "id": "virginia-garcia",
     "name": "Virginia Garcia",
     "initials": "VG",
-    "meta": "Google review · 13 weeks ago",
+    "meta": "Parent of Totto",
     "quote": "Loved our first visit. Great experience. Totto looked gorgeous!",
     "shortQuote": "Loved our first visit. Great experience. Totto looked gorgeous!",
     "fullQuote": "Loved our first visit great experience Totto looked gorgeous!!!",
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/gallery-testimonial.webp",
+    "dogName": "Totto"
   },
   {
     "id": "angela-wingenbach",
     "name": "Angela Wingenbach",
     "initials": "AW",
-    "meta": "Google review · 15 weeks ago",
+    "meta": "Puppy client",
     "quote": "Sunyoung did a wonderful grooming on our puppy! He looks fantastic, and she is a lovely person to deal with as well.",
     "shortQuote": "Sunyoung did a wonderful grooming on our puppy! He looks fantastic, and she is a lovely person to deal with as well.",
     "fullQuote": "Sunyoung did a wonderful grooming on our puppy! He looks fantastic, and she is a lovely person to deal with as well. We had taken him to several different groomers over the last few months to mixed results, so it is great to finally have found someone to take him to every time! You can really tell how much she loves dogs. Highly recommend her to anyone looking for a skilled and personable groomer! Thank you , Sunyoung.",
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/testimonials/testimonial-unknown-puppy-angela-wingenbach.webp",
+    "dogDescriptor": "puppy"
   },
   {
     "id": "stephanie-bernardi",
     "name": "Stephanie Bernardi",
     "initials": "SB",
-    "meta": "Google review · 17 weeks ago",
+    "meta": "Parent of Snickers and Gizmo, Shih Tzu",
     "quote": "Sun takes her time to work individually with only one dog at a time. They leave feeling refreshed and cared for, and we leave knowing our pups are in loving hands.",
     "shortQuote": "Sun takes her time to work individually with only one dog at a time. They leave feeling refreshed and cared for, and we leave knowing our pups…",
     "fullQuote": "Sunyoung is an absolutely phenomenal dog groomer. Her professional, ethical and moral business character shows in the care, kindness, compassion and talent she has. My Shih Tzu Snickers & my Imperial Shih Tzu Gizmo always love their time with Sun and the outcome of their groom is beautiful. I constantly get compliments on their grooming by strangers and due to them seeing the proof in Sun’s work on my fur babies , proof is in the polished grooms she does. Sun has given me great advice when I’ve had questions pertaining to my dogs health. Sun takes her time to work individually with only one dog at a time , unless you have two small dogs like myself , they both go together, but never overlap with other clients pets. Sun provides a calm and friendly environment for her fur clients and they leave feeling refreshed and cared for. As for us fur baby owners, we leave knowing our most precious pups are in loving hands.",
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/testimonials/testimonial-snickers-and-gizmo-stephanie-bernardi.webp",
+    "dogName": "Snickers and Gizmo",
+    "dogBreed": "Shih Tzu"
   },
   {
     "id": "katherine-herrow",
     "name": "Katherine Herrow",
     "initials": "KH",
-    "meta": "Google review · 17 weeks ago",
+    "meta": "Cockapoo client",
     "quote": "She took her time to help him feel comfortable and relaxed. When I picked him up, he was happy, calm, and looked adorable.",
     "shortQuote": "She took her time to help him feel comfortable and relaxed. When I picked him up, he was happy, calm, and looked adorable.",
     "fullQuote": "I took my 4 month old cockapoo to Sunyoung for his first grooming experience. He can be a little timid with new people, but she took her time to help him feel comfortable and relaxed. He even fell asleep a couple of times! It is obvious that she is experienced and knowledgeable in dealing with dogs and knows how to earn their trust. When I picked him up, he was happy, calm and looked adorable! We will be going back next time for sure!",
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/gallery-testimonial.webp",
+    "dogBreed": "Cockapoo"
   },
   {
     "id": "slada-lee",
     "name": "Slada Lee",
     "initials": "SL",
-    "meta": "Google review · 17 weeks ago",
+    "meta": "Parent of Millie, mixed breed",
     "quote": "Sunyoung was calm, gentle, and incredibly patient. It was a completely stress-free experience, and Millie’s cut was perfect.",
     "shortQuote": "Sunyoung was calm, gentle, and incredibly patient. It was a completely stress-free experience, and Millie’s cut was perfect.",
     "fullQuote": "Sunyoung did an absolutely amazing job with our newly adopted 9-year-old mixed breed, Millie. We’ve had Millie for less than a week and were worried about stressing her out, but she really needed a nail trim and grooming. Sunyoung was calm, gentle, and incredibly patient — it was a completely stress-free experience. Millie’s cut was perfect, her nails were beautifully trimmed, and her face was cleaned up so nicely. Sunyoung even took the time to check her teeth and made great progress, even though that’s not a standard service. We truly appreciated her care and attention. This was a 100% perfect experience for Millie — Sunyoung was the perfect match. We highly recommend her!",
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/testimonials/testimonial-millie-slada-lee.webp",
+    "dogName": "Millie",
+    "dogBreed": "mixed breed"
   },
   {
     "id": "clayton-boxall",
     "name": "Clayton Boxall",
     "initials": "CB",
-    "meta": "Google review · 18 weeks ago",
+    "meta": "Shorkie client",
     "quote": "After a few failed attempts, we were lucky enough to find Sunyoung. She was patient, and our 15-year-old dog had an excellent experience.",
     "shortQuote": "After a few failed attempts, we were lucky enough to find Sunyoung. She was patient, and our 15-year-old dog had an excellent experience.",
     "fullQuote": "After 14 years our groomer decided to retire leaving us to find a new groomer. After a few failed we were lucky and found Sunyoung. We explained our situation and she was more than willing to take on our 15 year old Shorkie. We are so happy with the experience and highly recommend her. She was patient and our dog had an excellent experience. We look forward to more appointments.",
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/testimonials/testimonial-unknown-shorkie-clayton-boxall.webp",
+    "dogBreed": "Shorkie"
   },
   {
     "id": "dana-jones",
     "name": "Dana Jones",
     "initials": "DJ",
-    "meta": "Google review · 18 weeks ago",
+    "meta": "Parent of Daisy and Milo",
     "quote": "They were happy, not stressed, and looked and smelled clean and fresh. She took her time getting to know our pups.",
     "shortQuote": "They were happy, not stressed, and looked and smelled clean and fresh. She took her time getting to know our pups.",
     "fullQuote": "Daisy and Milo went in for a full groom and came out beautiful. They were happy, not stressed and looked and smelled clean and fresh. She took her time getting to know our pups, making them comfortable and calm and it showed. Very happy to have found a groomer that considers each dog individually and caters to their needs. Thank you 💕",
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/testimonials/testimonial-daisy-and-milo-dana-jones.webp",
+    "dogName": "Daisy and Milo"
   },
   {
     "id": "tan-trinc",
@@ -289,27 +309,29 @@
     "id": "anali-cameron",
     "name": "Anali Cameron",
     "initials": "AC",
-    "meta": "Google review · 24 weeks ago",
+    "meta": "Parent of Gracey",
     "quote": "Thank you for your professionalism and attention to detail! Gracey’s cut and wash was 10 out of 10!",
     "shortQuote": "Thank you for your professionalism and attention to detail! Gracey’s cut and wash was 10 out of 10!",
     "fullQuote": "Thank you for your professionalism and attention to detail! Gracey’s cut and wash was 10 out of 10! I highly recommend this groomer!",
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/testimonials/testimonial-gracey-anali-cameron.webp",
+    "dogName": "Gracey"
   },
   {
     "id": "jenny-p",
     "name": "Jenny P",
     "initials": "JP",
-    "meta": "Google review · 29 weeks ago",
+    "meta": "Maltipoo client",
     "quote": "Excellent grooming experience with Sunyoung for my Maltipoo! For the first time in years he finally has the perfect poodle haircut I’ve always wanted!",
     "shortQuote": "Excellent grooming experience with Sunyoung for my Maltipoo! For the first time in years he finally has the perfect poodle haircut I’ve always wanted!",
     "fullQuote": "Excellent grooming experience with Sunyoung for my Maltipoo! For the first time in years he finally has the perfect poodle haircut I’ve always wanted! He was well taken care of and looks so cute and smells amazing! I am so happy with this haircut!",
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/testimonials/testimonial-unknown-maltipoo-jenny-p.webp",
+    "dogBreed": "Maltipoo"
   },
   {
     "id": "julius-e",
@@ -328,27 +350,30 @@
     "id": "donna-waxman",
     "name": "Donna Waxman",
     "initials": "DW",
-    "meta": "Google review · 39 weeks ago",
+    "meta": "Parent of Hershey, Cockapoo",
     "quote": "Her precision and artistry are unsurpassable. Every snip was done with such care that Hershey came home looking like a show dog.",
     "shortQuote": "Her precision and artistry are unsurpassable. Every snip was done with such care that Hershey came home looking like a show dog.",
     "fullQuote": "We just brought our Cockapoo, Hershey, to Sunyoung for his very first grooming and the experience was nothing short of extraordinary. Her precision and artistry are unsurpassable. Every snip was done with such care that Hershey came home looking like a show dog. Sunyoung groomed Hershey exactly as we discussed.The before and after photos she sent us were astonishing and showed the incredible transformation only her skills could achieve. She even offers free in-between grooming brushings to keep Hershey comfortable and mat free, a level of dedication we have never experienced before. Sunyoung is not just a groomer, she is a true artist and a gift to every pet lucky enough to be in her care.",
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/testimonials/testimonial-hershey-donna-waxman.webp",
+    "dogName": "Hershey",
+    "dogBreed": "Cockapoo"
   },
   {
     "id": "quin-aka-harlequinn",
     "name": "Quin aka Harlequinn",
     "initials": "QA",
-    "meta": "Google review · 39 weeks ago",
+    "meta": "Parent of Quin",
     "quote": "Sunyoung did an amazing job with our new puppy. She spent a lot of time and patience with Quin on her first big girl cut.",
     "shortQuote": "Sunyoung did an amazing job with our new puppy. She spent a lot of time and patience with Quin on her first big girl cut.",
     "fullQuote": "Sunyoung did an amazing job with our new puppy. She spent a lot of time and patience with Quin on her first big girl cut. I can’t thank her enough . She was extremely helpful in educating me on Quin’s coat and how to care for it. The love she has for dogs shines thru ❤️",
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/testimonials/testimonial-quin-quin-aka-harlequinn.webp",
+    "dogName": "Quin"
   },
   {
     "id": "katrina-nguyen",
@@ -380,27 +405,29 @@
     "id": "margarita-martinez",
     "name": "Margarita Martinez",
     "initials": "MM",
-    "meta": "Google review · 50 weeks ago",
+    "meta": "Parent of Happy",
     "quote": "My dog always comes home looking absolutely adorable. The attention to detail is amazing, and Happy has never looked better.",
     "shortQuote": "My dog always comes home looking absolutely adorable. The attention to detail is amazing, and Happy has never looked better.",
     "fullQuote": "Best groomer ever! I can’t say enough good things about this place! My dog always comes home looking absolutely adorable. The attention to detail is amazing and my dog, Happy has never looked better. Highly recommend to anyone who wants their furry friend treated like family! 🐶✨",
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/testimonials/testimonial-happy-margarita-martinez.webp",
+    "dogName": "Happy"
   },
   {
     "id": "mariam-caceres-llorente",
     "name": "Mariam Caceres Llorente",
     "initials": "MC",
-    "meta": "Google review · May 30, 2025",
+    "meta": "Parent of Luna",
     "quote": "Very compassionate and knowledgeable. This is the first groomer our dog enjoyed being around even after the grooming was done.",
     "shortQuote": "Very compassionate and knowledgeable. This is the first groomer our dog enjoyed being around even after the grooming was done.",
     "fullQuote": "Very compassionate, knowledgeable person. This is the first groomer our dog enjoy staying around even after done grooming while I’m chatting with the groomer. She is lovely and very friendly. My Luna look like Portuguese water dog again. Thank you so much. Honestly not enough can say about Sunyoung. We have been struggling to find her a groomer in the Hamilton area but I’m glad I took her here.",
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/testimonials/testimonial-luna-mariam-caceres-llorente.webp",
+    "dogName": "Luna"
   },
   {
     "id": "rana-diane-bumanglag",
@@ -413,85 +440,92 @@
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/testimonials/testimonial-unknown-pups-rana-diane-bumanglag.webp"
   },
   {
     "id": "roxanne-clement",
     "name": "Roxanne Clement",
     "initials": "RC",
-    "meta": "Google review · May 30, 2025",
+    "meta": "Parent of Rosie Baby",
     "quote": "I don’t trust anyone else with my Rosie Baby except Sunyoung. Rosie actually gets excited when we pull up & that tells me everything I need to know.",
     "shortQuote": "I don’t trust anyone else with my Rosie Baby except Sunyoung. Rosie actually gets excited when we pull up & that tells me everything I need to know.",
     "fullQuote": "I don’t trust anyone else with my Rosie Baby except Sunyoung. 🩷 Rosie actually gets excited when we pull up & that tells me everything I need to know. Sunyoung is so gentle, loving, and always makes Rosie look and feel her best. You can truly tell she cares. We’re so lucky to have found her.",
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/testimonials/testimonial-rosie-baby-roxanne-clement.webp",
+    "dogName": "Rosie Baby"
   },
   {
     "id": "nick",
     "name": "Nick",
     "initials": "N",
-    "meta": "Google review · May 30, 2025",
+    "meta": "Parent of Maya",
     "quote": "Maya comes home looking adorable and perfectly trimmed, but also calm and happy after every appointment.",
     "shortQuote": "Maya comes home looking adorable and perfectly trimmed, but also calm and happy after every appointment.",
     "fullQuote": "I can’t say enough good things about Sunyoung! She always does an amazing job grooming my dog, Maya. Not only does Maya come home looking adorable and perfectly trimmed, but she’s also calm and happy after every appointment; this says a lot about how gentle and caring Sunyoung is. You can tell she truly loves what she does and treats every dog like her own. She’s detail-oriented, professional, and incredibly kind. I highly recommend Sunyoung to anyone looking for a talented and trustworthy groomer. She’s the best!",
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/testimonials/testimonial-maya-nick.webp",
+    "dogName": "Maya"
   },
   {
     "id": "murray-bullock",
     "name": "Murray Bullock",
     "initials": "MB",
-    "meta": "Google review · May 30, 2025",
+    "meta": "Parent of Finn",
     "quote": "Sunyoung did an amazing job with our Finn, he was past due for a cut and trim. It was a spa day for Finn and he looked better than I have ever seen him after an appointment before!",
     "shortQuote": "Sunyoung did an amazing job with our Finn, he was past due for a cut and trim. It was a spa day for Finn and he looked better than I have ever…",
     "fullQuote": "Sunyoung did an amazing job with our Finn, he was past due for a cut and trim. It was a spa day for Finn and he looked better than I have ever seen him after an appointment before! We will certainly be coming back to The Groomer!",
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/testimonials/testimonial-finn-murray-bullock.webp",
+    "dogName": "Finn"
   },
   {
     "id": "naila-braj",
     "name": "Naila Braj",
     "initials": "NB",
-    "meta": "Google review · Mar 14, 2025",
+    "meta": "Pomeranian client",
     "quote": "There is no one else we would trust with our precious little girl. She does a perfect grooming job and is so gentle and kind.",
     "shortQuote": "There is no one else we would trust with our precious little girl. She does a perfect grooming job and is so gentle and kind.",
     "fullQuote": "We have been taking our Pomeranian to be groomed here, by Sunyoung, for a numbers of years! There is no one else we would trust with our precious little girl!! They do such a perfect grooming job and they are so gentle and kind! Our princess always comes out looking like a beauty queen…with a pink tail and pink neck streak to boot!!! Would never go anywhere else!!",
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/testimonials/testimonial-unknown-pup-naila-braj.webp",
+    "dogBreed": "Pomeranian"
   },
   {
     "id": "charlett-thompson-morgan",
     "name": "Charlett Thompson Morgan",
     "initials": "CT",
-    "meta": "Google review · Mar 14, 2025",
+    "meta": "Parent of Nyla, Yorkie-Bichon mix",
     "quote": "I continue to drive the distance for hard-to-find quality service. She treats your loved family member like her own.",
     "shortQuote": "I continue to drive the distance for hard-to-find quality service. She treats your loved family member like her own.",
     "fullQuote": "I have been taking my dog to this groomer for approximately 10 yrs. Based on the length of service my dog, Yorkie-Bichan mix Nyla, and myself are always happy with her attention to details, affection for Nyla, diligence, friendly attitude and patience. This groomer relocated from the Niagara region to Hamilton and I continue to drive the distance for hard to find quality service. If you're looking for someone who will treat your loved family member like their own, she's definitely the one!",
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/testimonials/testimonial-nyla-charlett-thompson-morgan.webp",
+    "dogName": "Nyla",
+    "dogBreed": "Yorkie-Bichon mix"
   },
   {
     "id": "missjoy",
     "name": "MissJoy",
     "initials": "M",
-    "meta": "Google review · Mar 12, 2025",
+    "meta": "Poodle client",
     "quote": "Thank you, Sunyoung for giving my dog a royal Poodle spa day. He looks great!",
     "shortQuote": "Thank you, Sunyoung for giving my dog a royal Poodle spa day. He looks great!",
     "fullQuote": "Thank you, Sunyoung for giving my dog a royal Poodle spa day. He looks great! See you next time. 😍🐾🐶🛁❤️",
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/testimonials/testimonial-unknown-poodle-missjoy.webp",
+    "dogBreed": "Poodle"
   },
   {
     "id": "jackie-bader",
@@ -504,7 +538,7 @@
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/testimonials/testimonial-unknown-dog-jackie-bader.webp"
   },
   {
     "id": "laszlo-kassai",
@@ -517,7 +551,7 @@
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/testimonials/testimonial-unknown-dog-laszlo-kassai.webp"
   },
   {
     "id": "tlc",
@@ -530,7 +564,7 @@
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/testimonials/testimonial-unknown-baby-tlc.webp"
   },
   {
     "id": "sarah-c",
@@ -549,27 +583,30 @@
     "id": "nicky-gregory",
     "name": "Nicky Gregory",
     "initials": "NG",
-    "meta": "Google review · Mar 5, 2025",
+    "meta": "Parent of Eva, Maltese",
     "quote": "Eva happily goes to her arms and is content, which speaks volumes. Sunyoung is a talented and thorough groomer with a true love for animals.",
     "shortQuote": "Eva happily goes to her arms and is content, which speaks volumes. Sunyoung is a talented and thorough groomer with a true love for animals.",
     "fullQuote": "My 12 year old Maltese is the runt of the litter and has trouble with arthritis so finding a gentle groomer proved to be a challenge many years ago until we met Sunyoung. Any previous groomer would cause Eva so much anxiety that she would empty her bladder and keep howling as we were approaching the building then sit alone post spa for a few hours to recuperate. Eva happily goes to her arms and is content which speaks volumes as someone who knows her dogs past anxiety .. Sunyoung is a very talented & thorough groomer but her true love for animals is most notable and what sets her apart from others as I couldn’t leave my beloved pup in anyone else’s care. When Eva was having some issues with her weeping eyes due to an allergy, Sunyoung shared her natural Recipes with me to help alleviate her symptoms. Even though she has moved away from Niagara Falls to Hamilton, I still continue to utilize her services as I simply do not trust anybody else with Eva. She is an absolute professional, reliable and knowledgeable but also a very kind hearted, animal loving soul whom I highly recommend.",
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/gallery-testimonial.webp",
+    "dogName": "Eva",
+    "dogBreed": "Maltese"
   },
   {
     "id": "eleni-t",
     "name": "Eleni T",
     "initials": "ET",
-    "meta": "Google review · Mar 5, 2025",
+    "meta": "Parent of Teddy",
     "quote": "Best groomer around. I won’t trust anyone else with my dog, not only for the haircut, but for the care while he is there.",
     "shortQuote": "Best groomer around. I won’t trust anyone else with my dog, not only for the haircut, but for the care while he is there.",
     "fullQuote": "Best groomer around I won’t trust anyone else with my dog. Not only the haircut but the trust I have for her to take care of my dog while there. She is a true pet lover and treat animal with care. My dog loves her and is actually excited when he gets there. Also she is so accommodating with the look I ask for. I love my dog like a baby and very happy to have found this groomer.",
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/testimonials/testimonial-teddy-eleni-t.webp",
+    "dogName": "Teddy"
   },
   {
     "id": "lyndsay-marie",
@@ -601,27 +638,31 @@
     "id": "nick-silva",
     "name": "Nick Silva",
     "initials": "NS",
-    "meta": "Google review · Mar 4, 2025",
+    "meta": "Parent of Shadow, Shih Tzu",
     "quote": "Shadow loves to come get his hair cut and has never looked better. He comes home with absolutely no irritation.",
     "shortQuote": "Shadow loves to come get his hair cut and has never looked better. He comes home with absolutely no irritation.",
     "fullQuote": "Finding the right groomer can be one of the biggest challenges owning a pet but my shadow (13 year old shih tzu) loves to come get his hair cut and has never looked better! ⭐️⭐️⭐️⭐️⭐️ on top of making him look like a runway model, and she takes special care and attention around his paws since he has very sensitive paws ….but this was the only groomer I have ever had that shadow comes home with absolutely no irritation! Our family and shadow really appreciate everything! Thank you so much… looking forward to seeing you again!",
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/gallery-testimonial.webp",
+    "dogName": "Shadow",
+    "dogBreed": "Shih Tzu"
   },
   {
     "id": "carlos-ruiz",
     "name": "Carlos Ruiz",
     "initials": "CR",
-    "meta": "Google review · Mar 4, 2025",
+    "meta": "Parent of Mia and Matilda, Maltipoo and Morkie",
     "quote": "We travel from St. Catharines because we know the kind of care and love Sunyoung puts in every time she attends to our Matilda.",
     "shortQuote": "We travel from St. Catharines because we know the kind of care and love Sunyoung puts in every time she attends to our Matilda.",
     "fullQuote": "Sunyoung is very special for us. We have been taking our loved ones for many years now. First was our Mia, a black and white “Maltipoo”, she was a very nervous dog, but Sunyoung always knew how to deal with her (Patience and love) and she always looked beautiful and calm after her grooming. After Mia passed, Sunyoung started to take care of Matilda our small golden “Morkie”. She has been taking care of her since she was a little puppy until now, and Matilda loves her to death. We travel every time from St Catharines for her appointments, because we know the kind of care and love Sunyoung put in every time she attends to our Matilda. I will recommend Sunyoung to every person that loves her dogs, and want them to be treated with love, patience, and kindness.",
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/testimonials/testimonial-mia-carlos-ruiz.webp",
+    "dogName": "Mia and Matilda",
+    "dogBreed": "Maltipoo and Morkie"
   },
   {
     "id": "antony-silva",
@@ -640,27 +681,29 @@
     "id": "dana-gallina",
     "name": "Dana Gallina",
     "initials": "DG",
-    "meta": "Google review · Mar 4, 2025",
+    "meta": "Parent of Rosie",
     "quote": "I've been taking my Rosie to Sunyoung for almost 12 years. She is the best.",
     "shortQuote": "I've been taking my Rosie to Sunyoung for almost 12 years. She is the best.",
     "fullQuote": "I've been taking my Rosie to Sunyoung for almost 12 years. She is the best. My Rosie just loves it.",
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/gallery-testimonial.webp",
+    "dogName": "Rosie"
   },
   {
     "id": "amanda-riley",
     "name": "Amanda Riley",
     "initials": "AR",
-    "meta": "Google review · Mar 4, 2025",
+    "meta": "Shi-poo and toy poodle client",
     "quote": "Sunyoung operates with integrity and patience. She genuinely cares about her clients and only wants what’s best for them.",
     "shortQuote": "Sunyoung operates with integrity and patience. She genuinely cares about her clients and only wants what’s best for them.",
     "fullQuote": "Sunyoung is an angel. She genuinely cares about her client’s and only wants what’s best for them. She’s groomed both of my dogs a shi-poo and a toy poodle. She knows how to give them a cute teddy bear face. Sunyoung operates with integrity and patience with her dogs. She took extra special care of my senior dog (white) as he aged who lived to be 17. Even though she has left the area, she still checks in on her fur clients. She is irreplaceable!",
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/testimonials/testimonial-unknown-two-dogs-amanda-riley.webp",
+    "dogBreed": "Shi-poo and toy poodle"
   },
   {
     "id": "ryan-pascoe",
@@ -692,14 +735,15 @@
     "id": "kianna-kwiatek",
     "name": "Kianna Kwiatek",
     "initials": "KK",
-    "meta": "Google review · Mar 4, 2025",
+    "meta": "Parent of Soleil",
     "quote": "My dog Soleil absolutely adored Sunyoung. She was patient, worked around my schedule, and the compliments on Soleil’s groom were constant.",
     "shortQuote": "My dog Soleil absolutely adored Sunyoung. She was patient, worked around my schedule, and the compliments on Soleil’s groom were constant.",
     "fullQuote": "My dog Soleil absolutely adored Sunyoung back when she was living in Niagara, she was patient and worked around my crazy schedule and for that we were thankful! The compliments on Soleil’s groom were constant and everywhere we went! We miss you and will forever recommend you as 5 star groomer!",
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/testimonials/testimonial-soleil-kianna-kwiatek.webp",
+    "dogName": "Soleil"
   },
   {
     "id": "judy-kang",
@@ -744,14 +788,15 @@
     "id": "trevor-copp",
     "name": "Trevor Copp",
     "initials": "TC",
-    "meta": "Google review · Mar 4, 2025",
+    "meta": "Parent of Bobby",
     "quote": "My dogs never looked so good, smelled so good, or felt so at ease with another person.",
     "shortQuote": "My dogs never looked so good, smelled so good, or felt so at ease with another person.",
     "fullQuote": "She is God’s gift to dogs. My dogs never looks so good, smelled so good, and never was so at ease with another person. My dogs are real barkers, but I couldn’t believe it when I saw how they took to her from day one. I’ll never go anywhere else.",
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/testimonials/testimonial-bobby-trevor-copp.webp",
+    "dogName": "Bobby"
   },
   {
     "id": "fahed-shaheen",
@@ -764,7 +809,7 @@
     "source": "Google",
     "rating": 5,
     "active": false,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/testimonials/testimonial-unknown-dog-fahed-shaheen.webp"
   },
   {
     "id": "tammy-sider",
@@ -783,26 +828,29 @@
     "id": "emerita-cheung",
     "name": "EMERITA CHEUNG",
     "initials": "EC",
-    "meta": "Google review · Mar 4, 2025",
+    "meta": "Shih Tzu client",
     "quote": "Sunyoung has groomed my shih tzu for years. She comes home beautiful every time.",
     "shortQuote": "Sunyoung has groomed my shih tzu for years. She comes home beautiful every time.",
     "fullQuote": "Sunyoung has groomed my shih tzu for years. She comes home beautiful every time. We miss her. I haven't found anyone as good since she moved.",
     "source": "Google",
     "rating": 5,
     "active": false,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/gallery-testimonial.webp",
+    "dogBreed": "Shih Tzu"
   },
   {
     "id": "kate-toran",
     "name": "Kate Toran",
     "initials": "KT",
-    "meta": "Google review · Mar 4, 2025",
+    "meta": "Parent of Lucy, miniature poodle",
     "quote": "From the first appointment, I was completely satisfied with the results of Lucy's cut. I have a miniature poodle so getting the right cut was essential.",
     "shortQuote": "From the first appointment, I was completely satisfied with the results of Lucy's cut. I have a miniature poodle so getting the right cut was…",
     "fullQuote": "From the first appointment, I was completely satisfied with the results of Lucy's cut. I have a miniature poodle so getting the right cut was essential. I'm sorry to have lost this wonderful groomer when she moved. Best wishes in all your endeavors.",
     "source": "Google",
     "rating": 5,
     "active": false,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/photos/gallery-testimonial.webp",
+    "dogName": "Lucy",
+    "dogBreed": "miniature poodle"
   }
 ]
