@@ -1108,7 +1108,9 @@ textarea:focus {
   }
 
   .gallery-item img {
-    height: 280px;
+    height: auto;
+    object-fit: contain;
+    display: block;
   }
 
   .consult-form-grid {
