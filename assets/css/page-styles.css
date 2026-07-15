@@ -289,6 +289,14 @@
       flex: 0 0 auto;
     }
 
+    .about-testimonial__photo {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      object-fit: cover;
+      flex: 0 0 auto;
+    }
+
     .about-testimonial__name {
       font-family: var(--font-headline);
       font-size: 0.95rem;

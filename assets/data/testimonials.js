@@ -1,18 +1,6 @@
 /*
   Testimonial database for thegroomer.ca.
   Edit this file to update testimonials without touching page markup.
-  Fields:
-    id: unique identifier
-    name: reviewer/client name
-    initials: short initials shown in cards
-    meta: small descriptive text
-    quote: edited public quote used on cards
-    shortQuote: shorter quote used in compact areas
-    fullQuote: fuller source text/reference
-    source: source label
-    rating: numeric rating where applicable
-    active: set false to keep in the database but hide from random display
-    image: optional image path
 */
 window.TGROOMER_TESTIMONIALS = [
   {
@@ -26,7 +14,7 @@ window.TGROOMER_TESTIMONIALS = [
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/testimonials/testimonial-leo-pomeranian-khy.webp"
   },
   {
     "id": "y",
@@ -65,7 +53,7 @@ window.TGROOMER_TESTIMONIALS = [
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/testimonials/testimonial-teddy-heidi-d.webp"
   },
   {
     "id": "anna-de-benedictis",
@@ -117,7 +105,7 @@ window.TGROOMER_TESTIMONIALS = [
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/testimonials/testimonial-unknown-dog-sakina-seva.webp"
   },
   {
     "id": "lebene-numekevor",
@@ -143,7 +131,7 @@ window.TGROOMER_TESTIMONIALS = [
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/testimonials/testimonial-maggie-and-mylee-sharonjulie-tarka-douthart.webp"
   },
   {
     "id": "vanessa",
@@ -182,7 +170,7 @@ window.TGROOMER_TESTIMONIALS = [
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/testimonials/testimonial-unknown-dog-chris-pagliari.webp"
   },
   {
     "id": "tracy-sauder",
@@ -221,7 +209,7 @@ window.TGROOMER_TESTIMONIALS = [
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/testimonials/testimonial-unknown-puppy-angela-wingenbach.webp"
   },
   {
     "id": "stephanie-bernardi",
@@ -234,7 +222,7 @@ window.TGROOMER_TESTIMONIALS = [
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/testimonials/testimonial-snickers-and-gizmo-stephanie-bernardi.webp"
   },
   {
     "id": "katherine-herrow",
@@ -260,7 +248,7 @@ window.TGROOMER_TESTIMONIALS = [
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/testimonials/testimonial-millie-slada-lee.webp"
   },
   {
     "id": "clayton-boxall",
@@ -273,7 +261,7 @@ window.TGROOMER_TESTIMONIALS = [
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/testimonials/testimonial-unknown-shorkie-clayton-boxall.webp"
   },
   {
     "id": "dana-jones",
@@ -286,7 +274,7 @@ window.TGROOMER_TESTIMONIALS = [
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/testimonials/testimonial-daisy-and-milo-dana-jones.webp"
   },
   {
     "id": "tan-trinc",
@@ -312,7 +300,7 @@ window.TGROOMER_TESTIMONIALS = [
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/testimonials/testimonial-gracey-anali-cameron.webp"
   },
   {
     "id": "jenny-p",
@@ -325,7 +313,7 @@ window.TGROOMER_TESTIMONIALS = [
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/testimonials/testimonial-unknown-maltipoo-jenny-p.webp"
   },
   {
     "id": "julius-e",
@@ -351,7 +339,7 @@ window.TGROOMER_TESTIMONIALS = [
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/testimonials/testimonial-hershey-donna-waxman.webp"
   },
   {
     "id": "quin-aka-harlequinn",
@@ -364,7 +352,7 @@ window.TGROOMER_TESTIMONIALS = [
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/testimonials/testimonial-quin-quin-aka-harlequinn.webp"
   },
   {
     "id": "katrina-nguyen",
@@ -403,7 +391,7 @@ window.TGROOMER_TESTIMONIALS = [
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/testimonials/testimonial-happy-margarita-martinez.webp"
   },
   {
     "id": "mariam-caceres-llorente",
@@ -416,7 +404,7 @@ window.TGROOMER_TESTIMONIALS = [
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/testimonials/testimonial-luna-mariam-caceres-llorente.webp"
   },
   {
     "id": "rana-diane-bumanglag",
@@ -429,7 +417,7 @@ window.TGROOMER_TESTIMONIALS = [
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/testimonials/testimonial-unknown-pups-rana-diane-bumanglag.webp"
   },
   {
     "id": "roxanne-clement",
@@ -442,7 +430,7 @@ window.TGROOMER_TESTIMONIALS = [
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/testimonials/testimonial-rosie-baby-roxanne-clement.webp"
   },
   {
     "id": "nick",
@@ -455,7 +443,7 @@ window.TGROOMER_TESTIMONIALS = [
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/testimonials/testimonial-maya-nick.webp"
   },
   {
     "id": "murray-bullock",
@@ -468,7 +456,7 @@ window.TGROOMER_TESTIMONIALS = [
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/testimonials/testimonial-finn-murray-bullock.webp"
   },
   {
     "id": "naila-braj",
@@ -481,7 +469,7 @@ window.TGROOMER_TESTIMONIALS = [
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/testimonials/testimonial-unknown-pup-naila-braj.webp"
   },
   {
     "id": "charlett-thompson-morgan",
@@ -494,7 +482,7 @@ window.TGROOMER_TESTIMONIALS = [
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/testimonials/testimonial-nyla-charlett-thompson-morgan.webp"
   },
   {
     "id": "missjoy",
@@ -507,7 +495,7 @@ window.TGROOMER_TESTIMONIALS = [
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/testimonials/testimonial-unknown-poodle-missjoy.webp"
   },
   {
     "id": "jackie-bader",
@@ -520,7 +508,7 @@ window.TGROOMER_TESTIMONIALS = [
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/testimonials/testimonial-unknown-dog-jackie-bader.webp"
   },
   {
     "id": "laszlo-kassai",
@@ -533,7 +521,7 @@ window.TGROOMER_TESTIMONIALS = [
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/testimonials/testimonial-unknown-dog-laszlo-kassai.webp"
   },
   {
     "id": "tlc",
@@ -546,7 +534,7 @@ window.TGROOMER_TESTIMONIALS = [
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/testimonials/testimonial-unknown-baby-tlc.webp"
   },
   {
     "id": "sarah-c",
@@ -585,7 +573,7 @@ window.TGROOMER_TESTIMONIALS = [
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/testimonials/testimonial-teddy-eleni-t.webp"
   },
   {
     "id": "lyndsay-marie",
@@ -637,7 +625,7 @@ window.TGROOMER_TESTIMONIALS = [
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/testimonials/testimonial-mia-carlos-ruiz.webp"
   },
   {
     "id": "antony-silva",
@@ -676,7 +664,7 @@ window.TGROOMER_TESTIMONIALS = [
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/testimonials/testimonial-unknown-two-dogs-amanda-riley.webp"
   },
   {
     "id": "ryan-pascoe",
@@ -715,7 +703,7 @@ window.TGROOMER_TESTIMONIALS = [
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/testimonials/testimonial-soleil-kianna-kwiatek.webp"
   },
   {
     "id": "judy-kang",
@@ -767,7 +755,7 @@ window.TGROOMER_TESTIMONIALS = [
     "source": "Google",
     "rating": 5,
     "active": true,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/testimonials/testimonial-bobby-trevor-copp.webp"
   },
   {
     "id": "fahed-shaheen",
@@ -780,7 +768,7 @@ window.TGROOMER_TESTIMONIALS = [
     "source": "Google",
     "rating": 5,
     "active": false,
-    "image": "assets/img/photos/gallery-testimonial.webp"
+    "image": "assets/img/testimonials/testimonial-unknown-dog-fahed-shaheen.webp"
   },
   {
     "id": "tammy-sider",

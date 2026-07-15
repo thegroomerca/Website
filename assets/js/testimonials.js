@@ -113,11 +113,17 @@
     const person = document.createElement("div");
     person.className = "about-testimonial__person";
 
-    const initials = document.createElement("span");
-    initials.className = "about-testimonial__initials";
-    initials.textContent = testimonial.initials || testimonial.name.split(/\s+/).map(function (part) {
-      return part.charAt(0);
-    }).join("").slice(0, 2).toUpperCase();
+    const identity = testimonial.image ? document.createElement("img") : document.createElement("span");
+    identity.className = testimonial.image ? "about-testimonial__photo" : "about-testimonial__initials";
+    if (testimonial.image) {
+      identity.src = relativeAssetPath(testimonial.image);
+      identity.alt = "Dog associated with " + testimonial.name + " testimonial";
+      identity.loading = "lazy";
+    } else {
+      identity.textContent = testimonial.initials || testimonial.name.split(/\s+/).map(function (part) {
+        return part.charAt(0);
+      }).join("").slice(0, 2).toUpperCase();
+    }
 
     const textWrap = document.createElement("div");
 
@@ -131,7 +137,7 @@
 
     textWrap.appendChild(name);
     textWrap.appendChild(meta);
-    person.appendChild(initials);
+    person.appendChild(identity);
     person.appendChild(textWrap);
     article.appendChild(quote);
     article.appendChild(person);
