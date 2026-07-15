@@ -251,6 +251,24 @@ p {
   white-space: nowrap;
 }
 
+/* Temporary waitlist notice: remove this block and the .waitlist-banner markup when bookings reopen. */
+.waitlist-banner {
+  position: relative;
+  z-index: 10;
+  padding: 0.8rem 1rem;
+  background: #264653;
+  color: #ffffff;
+  text-align: center;
+  font-family: var(--font-headline);
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.waitlist-banner strong {
+  font-weight: 800;
+}
+
 .site-menu-toggle {
   display: none;
   width: 52px;
@@ -673,9 +691,8 @@ p {
 
 .gallery-item img {
   width: 100%;
-  height: auto;
-  aspect-ratio: 1 / 1;
-  object-fit: contain;
+  height: 350px;
+  object-fit: cover;
   transition: transform 0.6s ease;
 }
 
@@ -828,6 +845,11 @@ textarea:focus {
 }
 
 @media (max-width: 768px) {
+  .waitlist-banner {
+    padding: 0.7rem 1rem;
+    font-size: 0.8rem;
+  }
+
   .contact-action-stack {
     flex-direction: column;
     align-items: stretch;
@@ -1081,11 +1103,7 @@ textarea:focus {
   }
 
   .gallery-item img {
-    height: auto;
-  }
-
-  .gallery-item:hover img {
-    transform: none;
+    height: 280px;
   }
 
   .consult-form-grid {

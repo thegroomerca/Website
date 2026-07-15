@@ -66,10 +66,6 @@
     return isInPagesFolder ? "../" + path : path;
   }
 
-  function hasDedicatedPhoto(testimonial) {
-    return testimonial.image && testimonial.image.indexOf("gallery-testimonial.webp") === -1;
-  }
-
   function setText(slot, field, value) {
     const node = slot.querySelector('[data-testimonial-field="' + field + '"]');
     if (node) {
@@ -117,23 +113,11 @@
     const person = document.createElement("div");
     person.className = "about-testimonial__person";
 
-    let identityMedia;
-    if (hasDedicatedPhoto(testimonial)) {
-      identityMedia = document.createElement("img");
-      identityMedia.className = "about-testimonial__photo";
-      identityMedia.src = relativeAssetPath(testimonial.image);
-      identityMedia.alt = testimonial.dogName
-        ? "Groomed dog portrait of " + testimonial.dogName
-        : "Groomed dog portrait for " + testimonial.name + " testimonial";
-      identityMedia.loading = "lazy";
-      identityMedia.decoding = "async";
-    } else {
-      identityMedia = document.createElement("span");
-      identityMedia.className = "about-testimonial__initials";
-      identityMedia.textContent = testimonial.initials || testimonial.name.split(/\s+/).map(function (part) {
-        return part.charAt(0);
-      }).join("").slice(0, 2).toUpperCase();
-    }
+    const initials = document.createElement("span");
+    initials.className = "about-testimonial__initials";
+    initials.textContent = testimonial.initials || testimonial.name.split(/\s+/).map(function (part) {
+      return part.charAt(0);
+    }).join("").slice(0, 2).toUpperCase();
 
     const textWrap = document.createElement("div");
 
@@ -147,7 +131,7 @@
 
     textWrap.appendChild(name);
     textWrap.appendChild(meta);
-    person.appendChild(identityMedia);
+    person.appendChild(initials);
     person.appendChild(textWrap);
     article.appendChild(quote);
     article.appendChild(person);

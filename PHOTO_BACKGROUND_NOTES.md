@@ -1,8 +1,8 @@
 # Photo Background Update
 
-All production photo assets in `assets/img/photos/` now use WEBP files from the supplied photo bundle.
+All photo assets in `assets/img/photos/` were converted to transparent-background WEBP files, then the site image references were updated from `.jpg` to `.webp`.
 
-A soft tonal gradient remains behind photo assets in `assets/css/styles.css` for transparent or lightly framed cutouts.
+A soft tonal gradient was added behind photo assets in `assets/css/styles.css` so the cutouts no longer sit on stark white backgrounds.
 
 Files now used:
 - `about-care.webp`
